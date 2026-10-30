@@ -1383,7 +1383,7 @@ Full info "separate numbers for each damage type". Built at the end of `MedicalS
   among the callers of `FUN_14073faf0` (**Observed**). The stealth KO's "*Thunk*" / "Failed!" is another caller ([combat](combat.md#stealth-knock-out)).
 
 Meitou (`PlayerInterface.AddFloaters`): text, font, motion and fade as above; colour: red when a player's character is hit, green when one lands the
-blow, else grey (reading of the relation tests). No healing floater, as in the original.
+blow, else grey (reading of the relation tests). No healing floater, as in the original. Drawn over the panels but under the modal screens (Esc menu, save/load, message boxes, dialogue).
 
 ### Tooltips
 

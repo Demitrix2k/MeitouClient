@@ -237,9 +237,11 @@ sealed partial class PlayerInterface
         AddHudText(controls);
         AddJobRemoveButtons(controls);
         if (hud) AddTutorialPanel(controls);
+        int modalFrom = -1;   // where the first modal screen (the Esc menu, save and load, message boxes) starts: the floaters go under it
         foreach (var screen in faithfulScreens.Arrange(Width, Height, BindFaithfulScreen, AddFaithfulContent))
         {
             if (ShotWithoutMenus && FeedbackShotHides.Contains(screen.Id)) continue;
+            if (modalFrom < 0 && faithfulScreens.IsModal(screen.Id)) modalFrom = controls.Count;
             if (screen.Id == "editor") controls.AddRange(EditorBackdrop());
             controls.AddRange(screen.Controls.Where(c => UiMode == UiMode.Faithful ||
                 !c.Properties.TryGetValue("ImageResource", out var resource) || resource != "Kenshi_TitleScreen"));
@@ -262,7 +264,9 @@ sealed partial class PlayerInterface
         AddNameTags(nameTags);
         AddTaskBars(nameTags);
         controls.InsertRange(0, nameTags);
-        AddFloaters(controls);   // the original's Dialog layer: over the panels
+        var floaterControls = new List<UiControl>();   // the original's Dialog layer: over the panels, under the modal screens
+        AddFloaters(floaterControls);
+        controls.InsertRange(modalFrom < 0 ? controls.Count : modalFrom + nameTags.Count, floaterControls);
         AddSpeech(controls);
         AddBuildReadout(controls);
         AddContextMenu(controls);
