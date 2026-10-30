@@ -14,7 +14,7 @@ accumulate `realDt*speed`, speeds 0/1/2/5. Budget `6*speed` ticks per frame; exc
 multiplier (slows below 20 fps; [game loop](game/game-loop.md#frame-clocks)); Meitou slows only below 5 fps. Control ticks precede simulation ticks; a speed change applies
 to the entire frame. `WorldSession` rejects unequal world/clock tick lengths, owns snapshots,
 clocks, input and camera, and disposes systems/services. Of a frame's ticks only the last two publish
-a snapshot (`RunTick(publish)`), the pair the host interpolates between. Advanced → Pause after loading (`PauseOnLoad`, default off, as in Faithful:
+a snapshot (`RunTick(publish)`), the pair the host interpolates between. Advanced → Pause after loading (`PauseOnLoad`, a plain on/off switch outside the Faithful / Meitou sides, default off as
 the game runs a loaded save at once, [game loop](game/game-loop.md)) pauses the speed after a menu load or import; `--load` runs.
 
 ### Tick ahead
