@@ -96,7 +96,7 @@ sealed class GameOptions
           --battle <n> <unit> <m> <unit> [rows]  n NPCs of one CHARACTER or ANIMAL_CHARACTER record (name or id) fight m of another (at least 1 each), in two blocks facing each other
                                      (rows of 25, or each block in that many rows, the back row taking the rest; bigger races stand further apart);
                                      no towns, no aggro: a standing fighter without a target goes for the nearest standing enemy; Backspace starts the same fight again
-          --battle-map <map>         where the battle is fought: plateau (default), mesa (the --duel spot in the dunes), sandbox (the flat floor) or x,z on the map (no building collision there)
+          --battle-map <map>         where the battle is fought: plateau (default), mesa (the --duel spot in the dunes), fog (a basin in the Fog Islands), sandbox (the flat floor) or x,z on the map (no building collision there)
           --battle-width <a>[,<b>]   fighters per row of the first side and of the second (one value: both), instead of the rows
           --battle-no-fear           nobody in the battle runs away: every fighter fights until it is down
           --move-to <x> <z>        with --new-game: select the squad and order it to walk (for screenshots; the picture is taken where the leader got to)
@@ -190,12 +190,13 @@ sealed class GameOptions
                     {
                         case "plateau": (g.BattleFlat, g.BattleAt) = (false, null); break;
                         case "mesa": (g.BattleFlat, g.BattleAt) = (false, (GameHost.DuelSpot.X, GameHost.DuelSpot.Y)); break;
+                        case "fog": (g.BattleFlat, g.BattleAt) = (false, (GameHost.FogBattleSpot.X, GameHost.FogBattleSpot.Y)); break;
                         case "sandbox": (g.BattleFlat, g.BattleAt) = (true, null); break;
                         case var map when map.Split(',') is [var mx, var mz] && float.TryParse(mx, NumberStyles.Float, CultureInfo.InvariantCulture, out float bx)
                             && float.TryParse(mz, NumberStyles.Float, CultureInfo.InvariantCulture, out float bz):
                             (g.BattleFlat, g.BattleAt) = (false, (bx, bz));
                             break;
-                        default: throw new ArgumentException("--battle-map must be plateau, mesa, sandbox or x,z");
+                        default: throw new ArgumentException("--battle-map must be plateau, mesa, fog, sandbox or x,z");
                     }
                     break;
                 case "--battle-no-fear": g.BattleNoFear = true; break;

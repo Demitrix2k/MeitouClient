@@ -21,6 +21,9 @@ sealed partial class GameHost
     /// <summary>The default spot (the owner's pick, 2026-10-23): a plateau about 1380 high, from camera code 01C69590C7EAFBAB44A4CE5146EAC4B2BFD203D43E755F7D44.</summary>
     public static readonly Vector2 BattleSpot = new(-74028, 13428);
 
+    /// <summary><c>--battle-map fog</c>: a basin floor in the Fog Islands about 140 high, level to 3 units over 800 x 800, inside both of its fog volumes and 3.8k from any building.</summary>
+    public static readonly Vector2 FogBattleSpot = new(-93970, -49900);
+
     bool IsBattle => g.Battle is not null;
     /// <summary>The floor is the sandbox's: the animation sandbox's, or the battle's with <c>--battle-map sandbox</c>.</summary>
     bool IsFlat => IsSandbox || IsBattle && g.BattleFlat;
