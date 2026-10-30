@@ -141,8 +141,13 @@ sealed class Feedback(Store store, Config config, GithubAuth github, IHttpClient
             s.AppendLine().AppendLine("</details>").AppendLine();
         }
         if (row.Location is { } location) s.AppendLine($"Camera: `{location.Replace('`', '\'')}`").AppendLine();
-        if (row.ScreenshotSize is not null) s.AppendLine($"![Screenshot]({Link("screenshot")})").AppendLine();
-        if (row.NavmeshSize is not null) s.AppendLine($"![Navmesh]({Link("navmesh")})").AppendLine();
+        // GitHub's image proxy refuses pictures over 5 MB (older games sent larger ones): those are linked instead of shown.
+        void Picture(string kind, string label, long? size)
+        {
+            if (size is { } bytes) s.AppendLine(bytes <= 5_000_000 ? $"![{label}]({Link(kind)})" : $"[{label}]({Link(kind)}) (png, {Mb(bytes)}, too large to show)").AppendLine();
+        }
+        Picture("screenshot", "Screenshot", row.ScreenshotSize);
+        Picture("navmesh", "Navmesh", row.NavmeshSize);
         if (row.SaveSize is { } save) s.AppendLine($"- [Save]({Link("save")}) (zip, {Mb(save)})");
         if (row.LogSize is not null) s.AppendLine($"- [log.txt]({Link("log")})");
         foreach (string missing in row.Wants.Where(k => k switch { "screenshot" => row.ScreenshotSize is null, "navmesh" => row.NavmeshSize is null, "save" => row.SaveSize is null, _ => row.LogSize is null }))
