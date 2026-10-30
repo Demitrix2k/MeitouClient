@@ -19,6 +19,10 @@ public sealed partial class DialogueSystem
     readonly SortedDictionary<CharacterId, (string Text, long Until, bool Large)> shown = new(Comparer<CharacterId>.Create(CompareIds));
     // When a squad last reacted to seeing a character (the cooldown of SeeOthers).
     readonly SortedDictionary<(int Squad, CharacterId Target), double> ambientAt = new(Comparer<(int, CharacterId)>.Create((a, b) => a.Item1 != b.Item1 ? a.Item1.CompareTo(b.Item1) : CompareIds(a.Item2, b.Item2)));
+    // The NPC / player-character pairs noticed at the world's first look (a new game or a load) and not lost from notice since: no sight line for them (engine choice; the
+    // original greets a character arriving, not one already beside it at the start, Observed). Hashed.
+    readonly SortedSet<(CharacterId Npc, CharacterId Player)> quiet = new(Comparer<(CharacterId, CharacterId)>.Create((a, b) => CompareIds(a.Item1, b.Item1) is var c and not 0 ? c : CompareIds(a.Item2, b.Item2)));
+    bool looked;
 
     /// <summary>The event of a crowd trigger's lines (EV_CROWD_TRIGGERED), and of a contract's end talk (EV_CONTRACT_JOB_ENDED).</summary>
     const int CrowdTriggered = 74;
@@ -129,18 +133,29 @@ public sealed partial class DialogueSystem
                 squadSees.Add((nc.SquadId, p));
             }
         }
+        // The pairs noticed now (seen, or by a squad mate within 2 R). Those noticed at the first look of the world stay quiet until the player character has been out of notice.
+        var noticed = new HashSet<(CharacterId Npc, CharacterId Player)>();
+        foreach (var (i, _) in near)
+        {
+            float shared = 2 * AggroSystem.RangeOf(table.Cold(i)!, AggroSystem.OutdoorSight);
+            foreach (int p in players)
+                if (sees.Contains((i, p)) || Vector3.DistanceSquared(table.Next[i].Position, table.Next[p].Position) <= shared * shared && squadSees.Contains((table.Cold(i)!.SquadId, p)))
+                    noticed.Add((table.IdOf(i), table.IdOf(p)));
+        }
+        if (!looked) { looked = true; quiet.UnionWith(noticed); }
+        else quiet.RemoveWhere(q => !noticed.Contains(q));
         int said = 0;
         foreach (var (i, nearest) in near)
         {
             if (said >= Settings.AmbientPerScan) break;
             var nc = table.Cold(i)!;
-            float shared = 2 * AggroSystem.RangeOf(nc, AggroSystem.OutdoorSight);
+            var npc = table.IdOf(i);
             int best = -1;
             float best2 = float.MaxValue;
             foreach (int p in players)
             {
                 float d2 = Vector3.DistanceSquared(table.Next[i].Position, table.Next[p].Position);
-                if (d2 < best2 && (sees.Contains((i, p)) || d2 <= shared * shared && squadSees.Contains((nc.SquadId, p)))) (best, best2) = (p, d2);
+                if (d2 < best2 && noticed.Contains((npc, table.IdOf(p))) && !quiet.Contains((npc, table.IdOf(p)))) (best, best2) = (p, d2);
             }
             // The squad's cooldown starts only once a line is said: the original asks again on every perception update and rolls `chance temporary` afresh each time
             // (the Red Sabres' attack root is 20%), so a failed look is tried again on the next scan. A player character it has nothing to say to leaves the turn to the NPCs.

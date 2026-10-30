@@ -458,7 +458,7 @@ public sealed partial class DialogueSystem : ITickSystem, IStateHashed, IDialogu
 
     public void Hash(ref StateHasher hasher)
     {
-        if (lastUse.Count == 0 && permanent.Count == 0 && counters.Count == 0 && Memory.IsEmpty && interrupts.Count == 0 && bubbles.Count == 0 && ambientAt.Count == 0 && approaches.Count == 0 && down.Count == 0 && followers.Count == 0 && stalkers.Count == 0 && open is null && talker.IsNone) return;
+        if (lastUse.Count == 0 && permanent.Count == 0 && counters.Count == 0 && Memory.IsEmpty && interrupts.Count == 0 && bubbles.Count == 0 && ambientAt.Count == 0 && approaches.Count == 0 && down.Count == 0 && quiet.Count == 0 && followers.Count == 0 && stalkers.Count == 0 && open is null && talker.IsNone) return;
         hasher.Add(0x44696167);
         hasher.Add(rolls);
         foreach (var (line, hours) in lastUse) { hasher.Add(Rng.StableHash(line)); hasher.Add(hours); }
@@ -471,6 +471,7 @@ public sealed partial class DialogueSystem : ITickSystem, IStateHashed, IDialogu
         foreach (var ((squad, whom), hours) in ambientAt) { hasher.Add(squad); hasher.Add(whom); hasher.Add(hours); }
         HashApproaches(ref hasher);
         foreach (var id in down) hasher.Add(id);
+        foreach (var (npc, pc) in quiet) { hasher.Add(npc); hasher.Add(pc); }
         hasher.Add(talker);
         hasher.Add(target);
         if (open is { } c)

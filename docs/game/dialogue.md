@@ -292,7 +292,12 @@ not given a speaker of its own in `FUN_140683f90`; Meitou says it as its resolve
 that is not the owner's).
 
 **Sight** (`FUN_140859680`, **Observed**, partly read): event 3 fires for a seen character outside the player's faction too (an NPC of
-another squad); 66 and 67 need a player-faction target.
+another squad); 66 and 67 need a player-faction target. It runs only for a sensed-list entry with its seen or heard flag (`+0x38` / `+0x39`,
+`FUN_140855710`), and only when Dialogue `+0x28` is set: `FUN_14067e220` sets it when a package with lines for 3, 4, 17, 27, 34, 36, 40, 66 or
+67 is added (**Observed**). A fired event is refused while its timer in Dialogue `+0xd0` is above 0; firing sets it to 1.0 (`FUN_140684990`,
+**Observed**). No start-of-game delay was found. **Observed** (user, vanilla): a new game in the Hub, the barman greets the player character
+only after it walks into the bar. Meitou (`DialogueSystem.quiet`): pairs noticed at the world's first look (new game or load) get no sight line
+until the player character has been out of notice.
 
 **Timing** (`FUN_140685090`, `FUN_14067fd80`): showing a bubble sets timer `+0x230` = 2.0 + 0.12 × text length (both constants **Verified**,
 read from the exe); DA 12 sets the second timer `+0x234` (val0). Both lose the frame dt each update, only while the pause flag
