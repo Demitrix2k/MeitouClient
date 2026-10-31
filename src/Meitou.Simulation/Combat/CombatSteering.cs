@@ -52,8 +52,10 @@ public static class CombatSteering
     public const float RepulsionDamping = 0.105f, StrafeDamping = 0.105f;
     /// <summary>The weight of the non-enemies' repulsion against the enemies'.</summary>
     public const float AllyWeight = 2;
-    /// <summary>The most bodies one repulsion sum takes.</summary>
+    /// <summary>The most bodies one repulsion sum takes, enemies and the rest together (engine choice: the nearest, docs/game/combat.md "Fight steering").</summary>
     public const int MaxRepulsions = 26;
+    /// <summary>The nearest bodies the repulsion first gathers by distance alone, so a few out of the flocking list among them still leave it its 26 (engine choice).</summary>
+    const int Gathered = 32;
     /// <summary>The flocking list's reach beyond the two radii and its height limit (<c>FUN_14085a070</c>).</summary>
     public const float FlockReach = 40, FlockHeight = 20;
     /// <summary>Speed caps in the footwork: sideways, backing off, and in all (not running).</summary>
@@ -101,17 +103,80 @@ public static class CombatSteering
         return (15 + 30 * u(0), 1.5f * r + 30 * u(1), stop, start);
     }
 
+    [System.Runtime.CompilerServices.InlineArray(Gathered)]
+    struct NearSlots { int slot; }
+    [System.Runtime.CompilerServices.InlineArray(Gathered)]
+    struct NearDistances { float distance; }
+
     struct Push
     {
         public World World;
         public CombatSystem Combat;
         public int Me, Target, Faction;
         public Vector3 At;
-        public float Radius, Own, EnemyReach, AllyReach;
+        public float Radius, Own, EnemyReach, AllyReach, Reach;
         public Vector2 Face;
         public bool Turn;
-        public Vector2 Enemies, Allies;
-        public int EnemyCount, AllyCount;
+        /// <summary>Only bodies that push go in (the second, full pass), else every body near enough by distance alone.</summary>
+        public bool Pushers;
+        /// <summary>The nearest bodies so far, by squared distance, ascending (ties: the first seen first); <see cref="Overflow"/> once one was left out.</summary>
+        public NearSlots Slots;
+        public NearDistances Distances;
+        public int Count, Capacity;
+        public bool Overflow;
+
+        public void Add(int c, float distance)
+        {
+            if (Count == Capacity && distance >= Distances[Count - 1]) { Overflow = true; return; }
+            if (Count == Capacity) { Overflow = true; Count--; }
+            int k = Count++;
+            for (; k > 0 && Distances[k - 1] > distance; k--) { Slots[k] = Slots[k - 1]; Distances[k] = Distances[k - 1]; }
+            Slots[k] = c;
+            Distances[k] = distance;
+        }
+    }
+
+    /// <summary>The push of body <paramref name="c"/> on the fighter (<c>getRepulsionVector</c>), false when it is out of the flocking list or too far to push.</summary>
+    static bool Repulsion(ref Push p, int c, out Vector2 v, out bool enemy)
+    {
+        (v, enemy) = (Vector2.Zero, false);
+        var table = p.World.Characters;
+        ref readonly var o = ref table.Previous[c];
+        if (table.Cold(c) is not { } oc || OutOfFlock(o, oc)) return false;
+        float rc = Radius(oc);
+        var away = new Vector2(p.At.X - o.Position.X, p.At.Z - o.Position.Z);
+        float flatDistance = away.Length();
+        if (flatDistance >= p.Own + rc + FlockReach) return false;   // not in the flocking list
+        enemy = p.Combat.IsEnemyOf(p.World, c, oc, p.Me, p.Faction);
+        float d = Vector3.Distance(o.Position, p.At);
+        float magnitude = (1 - d / (rc + (enemy ? p.EnemyReach : p.AllyReach))) * 100;
+        if (!(magnitude > 0) || flatDistance < 1e-4f) return false;
+        v = away / flatDistance * magnitude;
+        // powerThrough: the push is turned to the side of the facing it is on, its length kept (FUN_1402e9530).
+        if (p.Turn)
+        {
+            var side = new Vector2(p.Face.Y, -p.Face.X);
+            v = (Vector2.Dot(side, v) > 0 ? side : -side) * magnitude;
+        }
+        return true;
+    }
+
+    static int Add(ref Push p, int c, ref Vector2 enemies, ref Vector2 allies)
+    {
+        if (!Repulsion(ref p, c, out var v, out bool enemy)) return 0;
+        if (enemy) enemies += v; else allies += v;
+        return 1;
+    }
+
+    static void Gather(int c, ref Push p)
+    {
+        if (c == p.Me || c == p.Target) return;
+        ref readonly var o = ref p.World.Characters.Previous[c];
+        if (!o.Alive || MathF.Abs(o.Position.Y - p.At.Y) >= FlockHeight) return;
+        float dx = o.Position.X - p.At.X, dz = o.Position.Z - p.At.Z;
+        if (dx * dx + dz * dz >= p.Reach * p.Reach) return;
+        if (p.Pushers && !Repulsion(ref p, c, out _, out _)) return;
+        p.Add(c, Vector3.DistanceSquared(o.Position, p.At));
     }
 
     /// <summary>
@@ -144,34 +209,24 @@ public static class CombatSteering
             World = world, Combat = combat, Me = i, Target = t, Faction = cold.Faction, At = me, Radius = rs, Own = radius, Face = face, Turn = s.PowerThrough,
             EnemyReach = rs + enemyDist, AllyReach = rs + allyDist,
         };
-        float reach = MathF.Max(q.EnemyReach, q.AllyReach) + CombatTuning.DefaultFootprint * 4;
-        world.Grid.Query(me.X, me.Z, reach, ref q, static (int c, ref Push p) =>
+        // The repulsion takes the nearest MaxRepulsions bodies that push (they push hardest). A body pushes only within both the flocking list's reach and its own
+        // reach, so nothing farther than the nearer of the two (plus a large body's radius) is looked at. First the nearest by distance alone, the flocking list's
+        // tests only for those; when too many of them are out of it to leave 26, again with the tests on every body (a crowd of the fallen).
+        q.Reach = MathF.Min(radius + FlockReach, MathF.Max(q.EnemyReach, q.AllyReach)) + CombatTuning.DefaultFootprint * 4;
+        q.Capacity = Gathered;
+        world.Grid.Query(me.X, me.Z, q.Reach, ref q, Gather);
+        Vector2 enemies = Vector2.Zero, allies = Vector2.Zero;
+        int pushes = 0;
+        for (int k = 0; k < q.Count && pushes < MaxRepulsions; k++)
+            pushes += Add(ref q, q.Slots[k], ref enemies, ref allies);
+        if (pushes < MaxRepulsions && q.Overflow)
         {
-            if (c == p.Me || c == p.Target) return;
-            var table = p.World.Characters;
-            ref readonly var o = ref table.Previous[c];
-            if (!o.Alive || MathF.Abs(o.Position.Y - p.At.Y) >= FlockHeight) return;
-            if (table.Cold(c) is not { } oc || OutOfFlock(o, oc)) return;
-            float rc = Radius(oc);
-            var away = new Vector2(p.At.X - o.Position.X, p.At.Z - o.Position.Z);
-            float flatDistance = away.Length();
-            if (flatDistance >= p.Own + rc + FlockReach) return;   // not in the flocking list
-            bool enemy = p.Combat.IsEnemyOf(p.World, c, oc, p.Me, p.Faction);
-            if (enemy ? p.EnemyCount >= MaxRepulsions : p.AllyCount >= MaxRepulsions) return;
-            float d = Vector3.Distance(o.Position, p.At);
-            float magnitude = (1 - d / (rc + (enemy ? p.EnemyReach : p.AllyReach))) * 100;
-            if (!(magnitude > 0) || flatDistance < 1e-4f) return;
-            var v = away / flatDistance * magnitude;
-            // powerThrough: the push is turned to the side of the facing it is on, its length kept (FUN_1402e9530).
-            if (p.Turn)
-            {
-                var side = new Vector2(p.Face.Y, -p.Face.X);
-                v = (Vector2.Dot(side, v) > 0 ? side : -side) * magnitude;
-            }
-            if (enemy) { p.Enemies += v; p.EnemyCount++; }
-            else { p.Allies += v; p.AllyCount++; }
-        });
-        var vel = (q.Enemies + q.Allies * AllyWeight) * RepulsionDamping + face * seek;
+            (q.Count, q.Overflow, q.Capacity, q.Pushers) = (0, false, MaxRepulsions, true);
+            world.Grid.Query(me.X, me.Z, q.Reach, ref q, Gather);
+            (enemies, allies) = (Vector2.Zero, Vector2.Zero);
+            for (int k = 0; k < q.Count; k++) Add(ref q, q.Slots[k], ref enemies, ref allies);
+        }
+        var vel = (enemies + allies * AllyWeight) * RepulsionDamping + face * seek;
 
         // The dead zone: under STOP while moving, under START while standing, it stands.
         if (!s.PowerThrough && vel.Length() < (moving ? stop : start)) vel = Vector2.Zero;

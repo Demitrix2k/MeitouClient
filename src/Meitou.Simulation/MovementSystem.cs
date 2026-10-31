@@ -954,7 +954,8 @@ public sealed class MovementSystem(PathService paths) : ITickSystem, IDisposable
 
             // Closing on its spot it is not held off by those standing round it (they are pushed aside as it arrives); a sitter is not moved at all.
             bool seated = Seated(n, cold);
-            if (closing || seated || steering) push.Sum = Vector2.Zero;   // a steering fighter's repulsion is its separation
+            // A steering fighter keeps it too: its repulsion is too weak to keep bodies apart in a crowd, and without it Contact shoves back out what the steering walks in.
+            if (closing || seated) push.Sum = Vector2.Zero;
             var drive = closing || seated ? dir * speed : Blocked(world, cold, ref push, new Vector2(p.Position.X, p.Position.Z), dir * speed);
             var step = (drive + push.Sum * SeparationStrength) * dt;
             var shove = closing || seated ? Vector2.Zero : Contact(world, i, cold, ref push, new Vector2(p.Position.X, p.Position.Z) + step);
