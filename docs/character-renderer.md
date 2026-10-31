@@ -63,8 +63,11 @@ translucency (ears).
 `CharacterContent` owns buffers/textures/morph arena; worker fetching/preparation precedes render
 uploads. Reuse appearances/content; replace only after ready and retire after GPU consumers.
 `CharacterTextureBudget` shares mip/VRAM pressure policy; unavailable content uses a stand-in.
-Loading readiness includes used textures deferred by memory pressure, not just queued decodes/uploads.
-Generated four-level reductions are always enabled; with 100+ characters drawn in the world, pose rates fall with the character's size on screen
+Loading readiness includes used textures deferred by memory pressure, not just queued decodes/uploads, but not the governor's coarser
+replacements (`WorldTextureCache.AwaitedCount`: the finer image is drawn until one lands). Under the loading screen (`CharacterRenderer.Covered`)
+textures upload and appearances build for up to 16 ms a frame instead of the play budgets.
+Generated four-level reductions are always enabled; their index lists are cached on disk (`%LOCALAPPDATA%\Meitou\charlods`, keyed by the parts'
+vertices and indices, radius and settings; `--no-load-cache` bypasses it), as building them is most of a mesh's preparation; with 100+ characters drawn in the world, pose rates fall with the character's size on screen
 (its diameter in pixels at the view's projection, so resolution and field of view count and big animals keep their rate farther): 100 px and more every
 frame, then at most 30/15/7.5 poses/s below 100/50/25 px (in time, the game's animation clock, each on its own phase); at most 48 characters, the largest first,
 take the full rate by size, the next ones at least 30/s (`CharacterRenderer.PosePixelSteps`, `FullRateBudget`; engine choices). `CharacterInstance.FullRateAnimation` bypasses

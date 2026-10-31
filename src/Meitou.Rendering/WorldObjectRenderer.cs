@@ -346,11 +346,11 @@ public sealed unsafe partial class WorldObjectRenderer : IDisposable
         construction is { Count: > 0 } sites && !inst.Stand && sites.ContainsKey(inst.Placed.ParentPlacementId ?? inst.Placed.PlacementId);
 
     /// <summary>Requested work: zone layouts, meshes and textures, including used textures deferred by memory pressure.</summary>
-    public int Pending => streamer.Pending + meshes.Pending + uploads.Count + textureCache.PendingCount + textureCache.UnresidentUsedCount + unresolvedInRange + (landmarkTask is not null ? 1 : 0);
+    public int Pending => streamer.Pending + meshes.Pending + uploads.Count + textureCache.AwaitedCount + textureCache.UnresidentUsedCount + unresolvedInRange + (landmarkTask is not null ? 1 : 0);
 
     int unresolvedInRange;
     /// <summary>What <see cref="Pending"/> is made of, for the loading log.</summary>
-    public string PendingDetail => $"zones {streamer.Pending}, meshes {meshes.Pending}, uploads {uploads.Count}, textures {textureCache.PendingCount} loading {textureCache.UnresidentUsedCount} deferred, unresolved {unresolvedInRange}, landmarks {(landmarkTask is not null ? 1 : 0)}";
+    public string PendingDetail => $"zones {streamer.Pending}, meshes {meshes.Pending}, uploads {uploads.Count}, textures {textureCache.AwaitedCount} loading {textureCache.UnresidentUsedCount} deferred, unresolved {unresolvedInRange}, landmarks {(landmarkTask is not null ? 1 : 0)}";
     public List<string> Messages { get; } = [];
 
     /// <summary>A line about what is loaded, for the log.</summary>
@@ -365,6 +365,10 @@ public sealed unsafe partial class WorldObjectRenderer : IDisposable
 
     /// <summary>Render-thread time per frame spent on uploads and resolving.</summary>
     public double BudgetMs { get; set; } = 2;
+    /// <summary>The view is under the loading screen (the host sets it each frame): its frames need not be smooth, so uploads and resolving take up to
+    /// <see cref="CoveredBudgetMs"/> a frame instead of <see cref="BudgetMs"/>, and zones and instances are taken eight times as fast.</summary>
+    public bool Covered { get; set; }
+    const double CoveredBudgetMs = 16;
 
     /// <summary>Follows the eye: lays out zones and loads meshes and textures around it, within <see cref="BudgetMs"/> of render-thread time.</summary>
     /// <summary>The arrival eye of a character flight (<see cref="ObjectStreamer.Ahead"/>): its objects are laid out, loaded and kept, their meshes and textures as fine
@@ -378,7 +382,7 @@ public sealed unsafe partial class WorldObjectRenderer : IDisposable
     /// <summary>Points kept loaded besides the eye's (<see cref="ObjectStreamer.Kept"/>).</summary>
     public IReadOnlyList<Vector3> Kept { get => streamer.Kept; set => streamer.Kept = value; }
 
-    public void Update(Vector3 eye) => Update(eye, BudgetMs);
+    public void Update(Vector3 eye) => Update(eye, Covered ? Math.Max(BudgetMs, CoveredBudgetMs) : BudgetMs);
 
     /// <summary>Colour draws of parts whose diffuse map was not resident (drawn grey) and, at the same moment, textures waiting for a finer image,
     /// the largest of each since <see cref="TakePopStats"/> (the benchmark's pop-in lines).</summary>
@@ -429,11 +433,13 @@ public sealed unsafe partial class WorldObjectRenderer : IDisposable
                 Console.WriteLine($"warning   landmarks: {collected.Exception?.GetBaseException().Message}");
             }
         }
-        streamer.Update(eye, streamRange, unlimited ? 64 : 1);
+        // Under the loading screen (Covered) eight times the zones and resolves a frame.
+        int scale = Covered ? 8 : 1;
+        streamer.Update(eye, streamRange, unlimited ? 64 : scale, Covered);
         ResolveTowns(eye);
-        unresolvedInRange = streamer.Scan(eye, RealRange, DistantReach, NoDistant, Resolve, unlimited ? int.MaxValue : 40);
-        unresolvedInRange += streamer.ScanLandmarks(eye, LandmarkReach, Resolve, unlimited ? int.MaxValue : 10);
-        unresolvedInRange += streamer.ScanLoose(streamer.Loose, eye, RealRange, Resolve, unlimited ? int.MaxValue : 10);
+        unresolvedInRange = streamer.Scan(eye, RealRange, DistantReach, NoDistant, Resolve, unlimited ? int.MaxValue : 40 * scale);
+        unresolvedInRange += streamer.ScanLandmarks(eye, LandmarkReach, Resolve, unlimited ? int.MaxValue : 10 * scale);
+        unresolvedInRange += streamer.ScanLoose(streamer.Loose, eye, RealRange, Resolve, unlimited ? int.MaxValue : 10 * scale);
         meshes.Pump();
         MarkInRange(eye, force: unlimited);
         meshes.Trim();

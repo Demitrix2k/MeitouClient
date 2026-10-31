@@ -34,11 +34,16 @@ preserve world on failure. Gameplay warm-up waits for nearby population, terrain
 assets and used textures (including deferred loads), then <40ms frames for0.5s (max5s for frame pacing).
 After 5s of continuous `VramGuard` pressure, content it holds back is no longer waited for (it cannot load until the use falls).
 A game's warm-up waits only for the characters within 3000 units of the camera's focus (`CharacterRenderer.LoadingFocus`, `LoadingReach`); the rest are prepared once
-the screen lifts. The original's loaded zones (the camera's 3 x 3 block) can hold hundreds of NPCs, whose meshes' generated levels are made on every load (no disk
-cache). **Observed** (a Great Desert save near Heng, RTX 4090): 479 looks pending and a 130 s wait before this rule, 35 and 40 s with it.
+the screen lifts. The original's loaded zones (the camera's 3 x 3 block) can hold hundreds of NPCs, whose meshes' generated levels are built once and then read from a disk
+cache ([character-renderer](character-renderer.md#content-lod-and-memory)). **Observed** (a Great Desert save near Heng, RTX 4090): 479 looks pending and a 130 s wait before this rule, 35 and 40 s with it.
 The warm-up (title and game) waits for grass only within the range of the default grass distance (`FoliageRenderer.LoadingPending`, `DefaultGrassRange`);
 pages a longer setting reaches grow in, nearest first, after the screen lifts. **Observed** (save siwa-test4, the Ultra tier's grass distance x 2): the title waited
 107 s and the game about as long for 16 000 and 27 000 grass pages made at about 400 a second, everything else ready.
+Under the cover the streams' frames need not be smooth: the character, foliage and object renderers (`Covered`, set by the host each frame) upload and build for up
+to 16 ms a frame instead of their play budgets, foliage layouts and grass pages are queued four per streaming thread (`BackgroundWork.Threads`; finished ones are
+taken once a frame), and objects take eight times the zones and resolves a frame. Once the warm-up's content is ready the streams are back at their play budgets, so
+its run of smooth frames measures play. **Observed** (siwa-test, Ultra settings, 662 mods, RTX 4090, 9800X3D, warm disk caches): the game's warm-up went from 20.8
+to about 6.5 s with this, the grass picking, the coarsening rule and the character LOD cache.
 Population builds are queued/applied at frame boundaries without advancing game time, AI or movement;
 navmesh-gated spawns are retried while loading. Warm-up and the flight hold the simulation paused.
 The Faithful title does not wait: its picture is opaque, so the start ends with the splash ([ui-screens](game/ui-screens.md#splash)) and the boot.
