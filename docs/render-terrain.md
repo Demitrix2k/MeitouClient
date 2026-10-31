@@ -18,6 +18,11 @@ world coordinates. `terrain-layer-skip` can omit insignificant layer work; thres
 choices requiring boundary/material checks. `terrain-late-colour` separates depth from shading
 where occluders justify it. A depth prepass is extra geometry, not automatically a speedup.
 
+**World colour map** (`TerrainTextures.PrepareWorld`): the 8 × 8 colour tiles box-filtered into one 2048² RGBA map for the far terrain
+and foliage. Cached raw (16 MB, no header) in `%LOCALAPPDATA%\Meitou\terrain\worldcolour_<hash>.bin`: hash of a version tag, the size and
+each tile's path, length and write time, so a mod's tile gets its own file; a file of the wrong length is rebuilt. Decoding the tiles
+took over a second a start. Old files are never deleted; bump the tag when the filtering changes. `--no-load-cache` skips it.
+
 ## Ground relief
 
 Meitou look, not in the game (`GroundRelief`). The parallax and the displacement are Faithful/Meitou switches `parallax` and
