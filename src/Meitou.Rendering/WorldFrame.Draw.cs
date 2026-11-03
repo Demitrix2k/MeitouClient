@@ -869,6 +869,10 @@ static partial class WorldFrame
         if (gpu.NavmeshOverlay is { Visible: true } navOverlay && post.Target is { } navPicture)
             navOverlay.Record(navPicture, width, height, post.SceneDepth, post.RenderWidth, post.RenderHeight, view * SceneProjection().Projection, eye);
 
+        // The pick & collision inspector's hulls over the finished picture (Meitou only).
+        if (gpu.InspectorOverlay is { Visible: true } debugOverlay && post.Target is { } debugPicture)
+            debugOverlay.Record(debugPicture, width, height, post.SceneDepth, post.RenderWidth, post.RenderHeight, view * SceneProjection().Projection, eye);
+
         // The hover outline (Meitou only): the mask drawn after the portraits.
         if (gpu.HoverOutline is { } outline && gpu.Characters?.HoverMasks is { Count: > 0 } hover && post.Target is { } hoverPicture)
         {

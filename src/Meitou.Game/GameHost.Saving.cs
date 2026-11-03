@@ -195,6 +195,7 @@ sealed partial class GameHost
             WriteDecals(game);
             player.WriteBiome(game.Camera);
             CaptureModData(world, game);
+            WriteLevelEdits(game);
         }
         catch (Exception e)
         {
@@ -366,6 +367,7 @@ sealed partial class GameHost
         loadedSave = loaded;
         preparedBase = null;
         worldEpoch++;
+        pendingLevelEdits = read.Result.LevelEdits;   // replayed once the host has met the new world (UpdateBuildings)
         var world = session.World;
         BloodForNewWorld(read.Result.Decals);
         session.Clock.SetTime(loaded!.Clock.Day, loaded.Clock.HourOfDay);
