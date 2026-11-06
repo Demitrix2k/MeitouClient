@@ -48,6 +48,7 @@ public static class SaveLoader
         ArgumentNullException.ThrowIfNull(save);
         ArgumentNullException.ThrowIfNull(data);
         options ??= new SaveLoadOptions();
+        Meitou.Diagnostics.Log.Reset();   // a loaded world names its missing records again (once each)
         if (world.Tick != 0 || world.Characters.Count != 0) throw new InvalidOperationException("A save is loaded into a world that has not started and has no characters.");
         // The seed a Meitou save was made with (its seeded layout: the nests it did not write roll again where they were); a base save keeps the world's.
         if (save.Camera.Record.Strings.GetValueOrDefault(SeedKey) is { } seedText && ulong.TryParse(seedText, System.Globalization.NumberStyles.None, System.Globalization.CultureInfo.InvariantCulture, out ulong seed)) world.RestoreSeed(seed);
@@ -104,7 +105,12 @@ public static class SaveLoader
         if (world.Systems.OfType<Production.ProductionSystem>().FirstOrDefault() is { } townProduction) TownMachineSave.Read(camera.Record, world, townProduction, TownMachineSave.Resolver(data));
         // The loose items of the zone files (docs/simulation.md "Ground items"); a zone with a file is not loaded fresh (no nest items are laid there).
         world.SavedZones.UnionWith(save.Zones.Keys);
-        if (GroundItemSave.Load(save, world, data.Items, id => data.FactionIndex(id) is var f and >= 0 && !data.Factions[f].NotReal ? f : -1) is > 0 and var lost) loaded.Notes.Add($"{lost} loose items name records this game does not have; they stay in the zone files.");
+        var lostItems = new Dictionary<string, int>(StringComparer.Ordinal);
+        if (GroundItemSave.Load(save, world, data.Items, id => data.FactionIndex(id) is var f and >= 0 && !data.Factions[f].NotReal ? f : -1, lostItems) is > 0 and var lost)
+        {
+            loaded.Notes.Add($"{lost} loose items name {lostItems.Count} records this game does not have; they stay in the zone files (the log names each).");
+            foreach (var (id, count) in lostItems.OrderBy(p => p.Key, StringComparer.Ordinal)) Meitou.Diagnostics.Log.WarnOnce("load", id, $"loose item record is not in the game data (x{count}); it stays in the zone files");
+        }
 
         var races = new Dictionary<string, RaceData?>(StringComparer.Ordinal);
         var parts = new Dictionary<string, BodyPartTemplate?>(StringComparer.Ordinal);
@@ -188,7 +194,12 @@ public static class SaveLoader
         int n = camera.Ints.GetValueOrDefault("num usedUniques");
         for (int k = 0; k < n; k++)
         {
-            if (camera.Strings.GetValueOrDefault($"usedUniques{k}") is not { } id || data.Db.Find(id) is null) continue;
+            if (camera.Strings.GetValueOrDefault($"usedUniques{k}") is not { } id) continue;
+            if (data.Db.Find(id) is null)
+            {
+                Meitou.Diagnostics.Log.WarnOnce("load", id, "unique character is not in the game data; its saved state is dropped");
+                continue;
+            }
             int state = camera.Ints.GetValueOrDefault($"usedUniquesState{k}", 1);
             uniques.Load(id, state is >= 0 and <= 2 ? (UniqueState)state : UniqueState.Alive, camera.Bools.GetValueOrDefault($"usedUniquesPlayer{k}"), Hand.Read(camera, $"usedUniques{k}handle"));
         }
@@ -224,8 +235,13 @@ public static class SaveLoader
             // A camp Meitou saved: its wild site and TOWN record; the position comes when the nest loads.
             else if (town.IsNest && town.Instance.StartsWith(SaveCapture.CampInstancePrefix, StringComparison.Ordinal)
                 && town.Instance[SaveCapture.CampInstancePrefix.Length..].Split(':', 2) is [var index, var townId]
-                && int.TryParse(index, System.Globalization.CultureInfo.InvariantCulture, out int wild) && data.Db.Find(townId) is { } record)
+                && int.TryParse(index, System.Globalization.CultureInfo.InvariantCulture, out int wild))
             {
+                if (data.Db.Find(townId) is not { } record)
+                {
+                    Meitou.Diagnostics.Log.WarnOnce("load", townId, "a saved camp names a TOWN that is not in the game data; the camp is skipped");
+                    continue;
+                }
                 var nest = TownData.From(record);
                 int faction = nest.Faction is { } id ? data.FactionIndex(id) : -1;
                 player.KnowCamp(new CampView(wild, townId, nest.Name, nest.Faction ?? "", faction >= 0 && data.Factions[faction].NotReal, null, flags), flags);
@@ -313,7 +329,12 @@ public static class SaveLoader
         if (origin < 0 && platoon.SquadTemplate.Length > 0 && LoadWildPlatoon(world, platoon, data, loaded, context)) return;
         if (origin < 0 || platoon.SquadTemplate.Length == 0)
         {
-            loaded.Notes.Add($"{platoon.Name}: no placed town for its base town '{baseTown}' or no squad template; its platoon stays in the save only.");
+            var why = new List<string>();
+            if (origin < 0) why.Add(baseTown.Length == 0 ? "no base town" : $"base town '{baseTown}' is not a placed town");
+            if (platoon.SquadTemplate.Length == 0) why.Add("no squad template");
+            else if (data.Db.Find(platoon.SquadTemplate) is not { } template) why.Add($"squad template '{platoon.SquadTemplate}' is not in the game data");
+            else if (!SquadFactory.IsTemplate(template)) why.Add($"'{platoon.SquadTemplate}' is not a squad template (defined by {template.DefinedBy})");
+            loaded.Notes.Add($"{platoon.Name}: {string.Join(" and ", why)}; its platoon stays in the save only.");
             return;
         }
         // Its AI package: the saved currentPackage when the template lists it, else the slot rule's; the package's unloaded func is its off-screen job.
@@ -419,7 +440,12 @@ public static class SaveLoader
             if (entry.IsRemoved || entry.States.Count == 0 || !byId.TryGetValue(entry.States[0], out var state)) continue;
             if (state.RecordType != FcsRecordType.GAMESTATE_TOWN || !state.Bools.GetValueOrDefault("is nest")) continue;
             var hand = Hand.Read(state, "hand");
-            if (hand.Type != (int)FcsRecordType.NEST || data.Db.Find(entry.Target) is not { Type: FcsRecordType.TOWN }) continue;
+            if (hand.Type != (int)FcsRecordType.NEST) continue;
+            if (data.Db.Find(entry.Target) is not { Type: FcsRecordType.TOWN })
+            {
+                Meitou.Diagnostics.Log.WarnOnce("load", entry.Target, "a saved nest names a TOWN that is not in the game data; the nest is skipped");
+                continue;
+            }
             context.Nests.Add(new SavedNest(entry.Id, entry.Target, entry.Position, hand, state));
         }
     }

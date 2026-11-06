@@ -57,7 +57,11 @@ public sealed partial class PopulationSystem
         for (int k = 0; k < count; k++)
         {
             string item = state.Strings.GetValueOrDefault(Key(k, "itm"), "");
-            if (db.Find(item) is null) continue;
+            if (db.Find(item) is null)
+            {
+                Meitou.Diagnostics.Log.WarnOnce("spawn", item, "a town's artifact item is not in the game data; skipped");
+                continue;
+            }
             string Part(string field) => state.Strings.GetValueOrDefault(Key(k, field), "") is var id && db.Find(id) is not null ? id : "";
             list.Add(new ArtifactStack(item, Part("mat"), Part("man"), state.Ints.GetValueOrDefault(Key(k, "lvl")), state.Ints.GetValueOrDefault(Key(k, "qty"))));
         }

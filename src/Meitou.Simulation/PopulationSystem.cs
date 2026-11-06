@@ -716,7 +716,7 @@ public sealed partial class PopulationSystem : ITickSystem, IDisposable
         int picks = 0;
         for (int e = 0; e < links.Count && cages.Count > 0; e++)
         {
-            if (data.Db.Find(links[e].Id) is not { } record || !SquadFactory.IsTemplate(record)) continue;
+            if (SquadFactory.TemplateOrWarn(data.Db, links[e].Id, $"prisoners of {owner.Plan.Template.Name}") is not { } record) continue;
             var faction = (uint)squad.Faction < (uint)data.Factions.Count ? data.Factions[squad.Faction] : null;
             ulong key = Rng.Mix(SeedSalts.PrisonerSquad ^ homeKey ^ (ulong)e << 48);
             var at = new Vector2(cages[0].Position.X, cages[0].Position.Z);

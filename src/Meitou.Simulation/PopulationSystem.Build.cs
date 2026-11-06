@@ -40,7 +40,7 @@ public sealed partial class PopulationSystem
             // No building data (headless worlds): every entry's squads at spots round the centre (engine choice).
             for (int e = 0; e < entries.Count; e++)
             {
-                if (data.Db.Find(entries[e].Id) is not { } record || !SquadFactory.IsTemplate(record)) continue;
+                if (SquadFactory.TemplateOrWarn(data.Db, entries[e].Id, $"town {town.Name} residents") is not { } record) continue;
                 var template = SquadTemplate.From(record);
                 for (int k = 0; k < entries[e].V0; k++)
                 {
@@ -55,7 +55,7 @@ public sealed partial class PopulationSystem
         List<Vector3>? guardNodes = null;
         for (int e = 0; e < barEntries.Count; e++)
         {
-            if (data.Db.Find(barEntries[e].Id) is not { } record || !SquadFactory.IsTemplate(record)) continue;
+            if (SquadFactory.TemplateOrWarn(data.Db, barEntries[e].Id, $"town {town.Name} bar squads") is not { } record) continue;
             var template = SquadTemplate.From(record);
             int n = BarCount(barEntries[e].V0, barEntries[e].V1, seed, Rng.Mix(SeedSalts.BarSquad ^ (ulong)site.Index << 40 ^ (ulong)e << 20 ^ 0xFFFFF));
             for (int k = 0; k < n; k++)

@@ -26,7 +26,7 @@ public static class SavedKit
         foreach (var s in items)
             if (s.Section == "main" && factory.Info(s.BaseId) is { } info) height = Math.Max(height, s.Y + Math.Max(info.Height, 1));
         var inventory = new Inventory(width, height);
-        Fill(inventory, items, factory, notes, "main");
+        Fill(inventory, items, factory, notes, "main", owner?.StringId);
         return inventory;
     }
 
@@ -35,17 +35,17 @@ public static class SavedKit
     /// saved section and cell; one whose cell lies outside the section, overlaps an item already placed (<c>FUN_1407466f0</c>) or whose section is occupied is auto-added instead
     /// (<see cref="Inventory.Add"/> / <see cref="Inventory.AddTo"/>), and one that finds no room is lost. The rejected items are auto-added after the rest are placed (the bag is then known), an engine choice.
     /// </summary>
-    static void Fill(Inventory inventory, IReadOnlyList<SaveItem> items, ItemFactory factory, List<string>? notes, string gridSection)
+    static void Fill(Inventory inventory, IReadOnlyList<SaveItem> items, ItemFactory factory, List<string>? notes, string gridSection, string? owner)
     {
         List<ItemInstance>? rejected = null;
         foreach (var s in items)
         {
             if (ItemOf(s, factory) is not { } item)
             {
-                notes?.Add($"item {s.BaseId} is not in the game data; left out");
+                notes?.Add(owner is null ? $"item {s.BaseId} is not in the game data; left out" : $"item {s.BaseId} (carried by {owner}) is not in the game data; left out");
                 continue;
             }
-            if (s.Contents is { } contents && item.Contents is { } bag) Fill(bag, contents, factory, notes, "backpack_content");
+            if (s.Contents is { } contents && item.Contents is { } bag) Fill(bag, contents, factory, notes, "backpack_content", owner);
             if (Fits(inventory, item)) inventory.Items.Add(item);
             else (rejected ??= []).Add(item);
         }
@@ -199,7 +199,11 @@ public static class SavedKit
     {
         if (!HasLook(appearance)) return null;
         var file = new AppearanceFile { Record = appearance! };
-        if (file.RaceId is not { } raceId || db.Find(raceId) is not { } race) return null;
+        if (file.RaceId is not { } raceId || db.Find(raceId) is not { } race)
+        {
+            if (file.RaceId is { } missingRace) Meitou.Diagnostics.Log.WarnOnce("race", missingRace, "race of a saved appearance is not in the game data; its look is rolled instead");
+            return null;
+        }
         var loadout = new Loadout
         {
             Seed = rolled.Seed, Character = rolled.Character, Faction = rolled.Faction, Race = race, Female = file.Female, Appearance = file, Generated = true,
@@ -220,7 +224,11 @@ public static class SavedKit
     {
         if (appearance is null) return null;
         var file = new AppearanceFile { Record = appearance };
-        if (file.RaceId is not { } raceId || db.Find(raceId) is not { } race) return null;
+        if (file.RaceId is not { } raceId || db.Find(raceId) is not { } race)
+        {
+            if (file.RaceId is { } missingRace) Meitou.Diagnostics.Log.WarnOnce("race", missingRace, "race of a saved appearance is not in the game data; the character gets no saved look");
+            return null;
+        }
         var loadout = new Loadout
         {
             Seed = seed, Faction = faction, Race = race, Female = file.Female, Appearance = file, Generated = true,
@@ -228,7 +236,11 @@ public static class SavedKit
         };
         foreach (var s in items)
         {
-            if (db.Find(s.BaseId) is not { } record) continue;
+            if (db.Find(s.BaseId) is not { } record)
+            {
+                Meitou.Diagnostics.Log.WarnOnce("item", s.BaseId, "a saved item is not in the game data; left off the drawn kit");
+                continue;
+            }
             GameRecord? Find(string id) => id.Length > 0 ? db.Find(id) : null;
             if (record.Type == FcsRecordType.ARMOUR && Worn.Contains(s.Section))
                 loadout.Clothing.Add(new LoadoutItem(record) { Quality = (int)s.Quality, Material = Find(s.MaterialId), Colour = Find(s.ColourId) });

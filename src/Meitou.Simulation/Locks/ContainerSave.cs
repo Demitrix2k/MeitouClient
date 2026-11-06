@@ -42,7 +42,11 @@ static class ContainerSave
         foreach (var e in entries)
         {
             var saved = new SaveItem { BaseId = e.R, Quantity = e.Q, X = e.X, Y = e.Y, Quality = e.Ql, Level = e.Lv, MaterialId = e.M ?? "", CompanyId = e.C ?? "", Charges = e.Ch, ColourId = e.Co ?? "", Section = topLevel ? "main" : e.S ?? "main", Unique = e.U };
-            if (SavedKit.ItemOf(saved, factory) is not { } item) continue;
+            if (SavedKit.ItemOf(saved, factory) is not { } item)
+            {
+                Meitou.Diagnostics.Log.WarnOnce("item", e.R, "a container's saved item is not in the game data; left out");
+                continue;
+            }
             if (e.I is { } inner && item.Contents is { } bag) Fill(inner, bag, factory, topLevel: false);
             if (topLevel && !grid.IsFree("main", item.X, item.Y, item.Width, item.Height)) { grid.AddTo("main", item); continue; }
             grid.Items.Add(item);

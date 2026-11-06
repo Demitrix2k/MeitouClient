@@ -14,10 +14,10 @@ namespace Meitou.Simulation.Saving;
 public static class GroundItemSave
 {
     /// <summary>
-    /// Puts the save's loose items on the ground, in zone and list order; returns how many the data could not make. <paramref name="factionOf"/> gives a faction id's index for
+    /// Puts the save's loose items on the ground, in zone and list order; returns how many the data could not make (each distinct missing record id with its count in <paramref name="missingIds"/>). <paramref name="factionOf"/> gives a faction id's index for
     /// <see cref="GroundItem.OwnedBy"/>, -1 for one that does not count (unknown, or <c>not real</c>).
     /// </summary>
-    public static int Load(SaveGame save, World world, ItemFactory factory, Func<string, int>? factionOf = null)
+    public static int Load(SaveGame save, World world, ItemFactory factory, Func<string, int>? factionOf = null, Dictionary<string, int>? missingIds = null)
     {
         int missing = 0;
         var handles = factionOf is null ? null : save.BuildHandles();
@@ -26,7 +26,11 @@ public static class GroundItemSave
             {
                 if (SavedKit.ItemOf(g.Item, factory) is { } item)
                     world.GroundItems.Load(item, g.Instance.Position, g.Instance.Rotation, handles is null || g.Item.Source is not { } r ? -1 : OwnerOf(r, handles, factionOf!));
-                else missing++;
+                else
+                {
+                    missing++;
+                    if (missingIds is not null) missingIds[g.Item.BaseId] = missingIds.GetValueOrDefault(g.Item.BaseId) + 1;
+                }
             }
         return missing;
     }

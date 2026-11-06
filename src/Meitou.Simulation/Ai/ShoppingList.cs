@@ -67,7 +67,11 @@ public sealed class ShoppingList
                 any = true;
                 if (Rng.Int(Rng.Hash(seed, key, RngPurpose.Spawn, EntryRoll + (ulong)k), 101) > values.Value1) continue;
                 // Only ITEM records count (the original looks the name up among those); an unknown name is skipped.
-                if (db.Find(links[k].TargetStringId) is not { Type: FcsRecordType.ITEM } item) continue;
+                if (db.Find(links[k].TargetStringId) is not { Type: FcsRecordType.ITEM } item)
+                {
+                    Meitou.Diagnostics.Log.WarnOnce("ai", links[k].TargetStringId, "a shopping-list entry is not an ITEM record of the game data; skipped");
+                    continue;
+                }
                 functions.Add(item.GetInt("item function"));
                 counts.Add(values.Value0);
             }

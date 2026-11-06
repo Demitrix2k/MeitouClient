@@ -720,7 +720,17 @@ static partial class WorldFrame
         const int shown = 20;
         foreach (var issue in issues.Take(shown))
             Console.WriteLine($"  {issue.Kind}: {issue}");
-        if (issues.Count > shown) Console.WriteLine($"  ... and {issues.Count - shown} more");
+        if (issues.Count <= shown) return;
+        // The rest, grouped by kind and file with a count and the first few distinct record ids: a long mod list does not lose what the cap cut. (One output: the console shows the same lines as log.txt.)
+        const int groupsShown = 40, idsShown = 5;
+        var groups = issues.Skip(shown).GroupBy(i => (i.Kind, i.File)).OrderByDescending(g => g.Count()).ToList();
+        Console.WriteLine($"  ... and {issues.Count - shown} more, in {groups.Count} kind/file groups:");
+        foreach (var g in groups.Take(groupsShown))
+        {
+            var ids = g.Select(i => i.StringId).Where(id => id is not null).Distinct().ToList();
+            Console.WriteLine($"  {g.Key.Kind} in {g.Key.File}: {g.Count()}{(ids.Count > 0 ? $" (ids: {string.Join(", ", ids.Take(idsShown))}{(ids.Count > idsShown ? $" and {ids.Count - idsShown} more" : "")})" : "")}");
+        }
+        if (groups.Count > groupsShown) Console.WriteLine($"  ... and {groups.Count - groupsShown} more groups ({groups.Skip(groupsShown).Sum(g => g.Count())} problems)");
     }
 
     public static WorldScene LoadFlat(WorldOptions o, GameDatabase db, ushort raw = 3344)

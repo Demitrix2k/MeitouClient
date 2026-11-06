@@ -59,6 +59,18 @@ public static class SquadFactory
     /// <summary>Whether a record is something a squad is made from: a SQUAD_TEMPLATE or a UNIQUE_SQUAD_TEMPLATE (null: no).</summary>
     public static bool IsTemplate(GameRecord? record) => record is { Type: FcsRecordType.SQUAD_TEMPLATE or FcsRecordType.UNIQUE_SQUAD_TEMPLATE };
 
+    /// <summary>
+    /// The squad-template record <paramref name="id"/>, or null with one warning per id (and subsystem) when the data lacks it or it is another record type; <paramref name="owner"/> says what
+    /// named it (for the log). Only the failing path allocates.
+    /// </summary>
+    public static GameRecord? TemplateOrWarn(GameDatabase db, string id, string owner)
+    {
+        var record = db.Find(id);
+        if (IsTemplate(record)) return record;
+        Meitou.Diagnostics.Log.WarnOnce("spawn", id, record is null ? $"squad template is not in the game data (named by {owner}); skipped" : $"is a {record.Type} record, not a squad template (named by {owner}, defined by {record.DefinedBy}); skipped");
+        return null;
+    }
+
     /// <summary>The count of one member list entry (section 5.1): the range rule, then the multiplier.</summary>
     public static int Count(int v0, int v1, float multiplier, bool dontMultiply, ulong roll)
     {

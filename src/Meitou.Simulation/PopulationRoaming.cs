@@ -762,7 +762,7 @@ public sealed partial class PopulationSystem
     /// <summary>Null when the template is gone or plans no one now (e.g. a save's platoon whose members are all dead or unique).</summary>
     BuiltSquad? BuildRoamer(string templateId, int faction, ulong key, ulong seed, Vector2 position)
     {
-        if (data.Db.Find(templateId) is not { } record) return null;
+        if (SquadFactory.TemplateOrWarn(data.Db, templateId, "a roaming platoon") is not { } record) return null;
         var townFaction = faction >= 0 ? data.Factions[faction] : null;
         return BuildOne(SquadTemplate.From(record), faction, townFaction, key, seed, position);
     }

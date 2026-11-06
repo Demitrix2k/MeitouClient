@@ -30,7 +30,7 @@ public sealed partial class PopulationSystem
             int n = 0;
             foreach (var mate in t.Housemates)
             {
-                if (data.Db.Find(mate.Id) is not { } mr || !SquadFactory.IsTemplate(mr)) continue;
+                if (SquadFactory.TemplateOrWarn(data.Db, mate.Id, $"housemates of {t.Name}") is not { } mr) continue;
                 var mt = SquadTemplate.From(mr);
                 int count = mate.V1 > 0 && mate.V1 > mate.V0
                     ? mate.V0 + Rng.Int(Rng.Hash(seed, (ulong)site.Index << 20 ^ (ulong)h, RngPurpose.Spawn, SeedSalts.Housemates + (ulong)n), mate.V1 - mate.V0 + 1)

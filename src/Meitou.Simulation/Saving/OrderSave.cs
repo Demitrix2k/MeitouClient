@@ -117,7 +117,11 @@ public static class OrderSave
             var target = CharacterId.None;
             if (o is { Hand: { IsNull: false, Type: (int)FcsRecordType.CHARACTER } } && (target = Find(table, o.Hand)).IsNone) continue;
             string? site = null;
-            if ((o.Site ?? o.InstanceKey) is not null && (site = SiteOf(world, o)) is null) continue;
+            if ((o.Site ?? o.InstanceKey) is not null && (site = SiteOf(world, o)) is null)
+            {
+                Meitou.Diagnostics.Log.WarnOnce("order", o.Site ?? o.InstanceKey!, $"a saved {row} order names a site the world does not have; the order is dropped");
+                continue;
+            }
             cold.OrderQueue.Add(new OrderEntry(row, owner) { Target = target, Site = site, Point = o.Point, Detail = owner.LoadDetail(world, self, row, o.Kind, target) });
         }
         DecisionSystem.Request(cold);

@@ -276,7 +276,12 @@ public sealed partial class PopulationSystem
                     if (savedSite.Remove(held, out int at)) sites[at] = sites[at] with { Key = key };
                     continue;
                 }
-                if (SquadFactory.WeightedPick(group.Nests, Gated, Pick) is not { } townId || data.Db.Find(townId) is not { } record) continue;
+                if (SquadFactory.WeightedPick(group.Nests, Gated, Pick) is not { } townId) continue;
+                if (data.Db.Find(townId) is not { } record)
+                {
+                    Meitou.Diagnostics.Log.WarnOnce("spawn", townId, "a wild nest group names a TOWN that is not in the game data; skipped");
+                    continue;
+                }
                 var town = TownData.From(record);
                 var zone = WorldLayout.ZoneOf(spots[0].X, spots[0].Y);
                 int faction = town.Faction is { } f ? data.FactionIndex(f) : -1;
