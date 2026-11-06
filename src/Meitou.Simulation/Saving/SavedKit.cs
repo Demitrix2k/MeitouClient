@@ -42,7 +42,7 @@ public static class SavedKit
         {
             if (ItemOf(s, factory) is not { } item)
             {
-                notes?.Add(owner is null ? $"item {s.BaseId} is not in the game data; left out" : $"item {s.BaseId} (carried by {owner}) is not in the game data; left out");
+                if (Meitou.Diagnostics.Log.First("kit", s.BaseId)) notes?.Add(owner is null ? $"item {s.BaseId} is not in the game data; left out" : $"item {s.BaseId} (carried by {owner}) is not in the game data; left out");
                 continue;
             }
             if (s.Contents is { } contents && item.Contents is { } bag) Fill(bag, contents, factory, notes, "backpack_content", owner);

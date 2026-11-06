@@ -156,12 +156,14 @@ public sealed class SavedPopulation
     internal void Log(string line) { lock (log) log.Add(line); }
     public List<string> TakeLog()
     {
+        List<string> list;
         lock (log)
         {
-            var list = new List<string>(log);
+            list = new List<string>(log);
             log.Clear();
-            return list;
         }
+        list.AddRange(Meitou.Diagnostics.Log.TakeRepeats("kit").Concat(Meitou.Diagnostics.Log.TakeRepeats("character")));   // how often the first lines above repeated
+        return list;
     }
 }
 
@@ -179,7 +181,7 @@ internal static class SavedCharacters
         var record = data.Db.Find(sc.RecordId);
         if (record is null)
         {
-            note?.Invoke($"{platoonName}: character {sc.Name} is made from {sc.RecordId}, which the game data does not have; left out.");
+            if (Meitou.Diagnostics.Log.First("character", sc.RecordId)) note?.Invoke($"{platoonName}: character {sc.Name} is made from {sc.RecordId}, which the game data does not have; left out.");
             return null;
         }
         RaceData? race = RaceOf(sc, record, data.Db, races);

@@ -173,6 +173,12 @@ public static class SaveLoader
             world.Player.Squad = shown.Id;
         else if (SquadManagement.PlayerSquads(world) is { Count: > 0 } squads)
             world.Player.Squad = (squads.FirstOrDefault(s => s.Members.Count > 0) ?? squads[0]).Id;
+        // The platoons that stay in the save only: one line for all (each base town / template pair named in full above, first platoon only).
+        if (Meitou.Diagnostics.Log.Snapshot("platoon") is { Count: > 0 } stay)
+        {
+            var top = stay.Take(8).Select(p => $"{p.Id.Replace("|", " / ")} x{p.Count}");
+            loaded.Notes.Add($"{stay.Sum(p => p.Count)} platoons stay in the save only, {stay.Count} distinct base town / squad template pairs: {string.Join(", ", top)}{(stay.Count > 8 ? $" and {stay.Count - 8} more" : "")}");
+        }
         return loaded;
     }
 
@@ -334,7 +340,9 @@ public static class SaveLoader
             if (platoon.SquadTemplate.Length == 0) why.Add("no squad template");
             else if (data.Db.Find(platoon.SquadTemplate) is not { } template) why.Add($"squad template '{platoon.SquadTemplate}' is not in the game data");
             else if (!SquadFactory.IsTemplate(template)) why.Add($"'{platoon.SquadTemplate}' is not a squad template (defined by {template.DefinedBy})");
-            loaded.Notes.Add($"{platoon.Name}: {string.Join(" and ", why)}; its platoon stays in the save only.");
+            // The first platoon of each base town and template pair is named in full; the others only count (a summary note closes the load).
+            if (Meitou.Diagnostics.Log.First("platoon", $"{baseTown}|{platoon.SquadTemplate}"))
+                loaded.Notes.Add($"{platoon.Name}: {string.Join(" and ", why)}; its platoon stays in the save only.");
             return;
         }
         // Its AI package: the saved currentPackage when the template lists it, else the slot rule's; the package's unloaded func is its off-screen job.
