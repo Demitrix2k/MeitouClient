@@ -1,0 +1,3189 @@
+{
+  "source": "generated from your game data by Meitou v0.16.1-nightly.20261107 (f92884ec)",
+  "dataDir": "clean install (base game + official DLC files only)",
+  "loadOrder": "gamedata.base, Newwworld.mod, Dialogue.mod, rebirth.mod",
+  "modded": false,
+  "modsSummary": "no mods beyond the base game (clean install)",
+  "mods": [],
+  "modsCfg": [],
+  "loadIssues": [],
+  "factsOnly": true,
+  "dropped_prose_fields": [
+    "item description",
+    "research description",
+    "dialogue lines (never read)",
+    "lore and book contents (never read)",
+    "character and squad flavour text (never read)"
+  ],
+  "generated": "2026-11-07T13:28:10Z",
+  "entries": [
+    {
+      "id": "ancient-ruins",
+      "name": "Ancient Ruins",
+      "aliases": [
+        "48671-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "48671-rebirth.mod",
+        "relations": {
+          "Wildlife": 0
+        },
+        "towns": 25
+      }
+    },
+    {
+      "id": "anti-slavers",
+      "name": "Anti-Slavers",
+      "aliases": [
+        "58229-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "58229-Dialogue.mod",
+        "relations": {
+          "Cannibals": -100,
+          "Dust Bandits": -100,
+          "Empire Peasants": 70,
+          "Flotsam Ninjas": 70,
+          "Hounds": 0,
+          "Manhunters": -100,
+          "Rebirth Slaves": 100,
+          "Shinobi Thieves": 50,
+          "Slave Hunters": -100,
+          "Slave Traders": -100,
+          "Slaves": 100,
+          "Swampers": 20,
+          "Tech Hunters": 70,
+          "The Holy Nation": -50,
+          "Traders Guild": -100,
+          "United Cities": -100,
+          "United Heroes League": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "band-of-bones",
+      "name": "Band of Bones",
+      "aliases": [
+        "56595-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "56595-Dialogue.mod",
+        "relations": {
+          "Bloodraiders": -100,
+          "Holy Nation Outlaws": -100,
+          "Old Machines": -100,
+          "Police": -100,
+          "Shek Kingdom": -100,
+          "Slave Traders": -100,
+          "The Holy Nation": -100,
+          "Traders Guild": -100,
+          "United Cities": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "bar-thugs",
+      "name": "Bar Thugs",
+      "aliases": [
+        "1534558-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "1534558-rebirth.mod",
+        "relations": {
+          "Anti-Slavers": 0,
+          "Empire Peasants": 0,
+          "Rebel Farmers": 0
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "berserkers",
+      "name": "Berserkers",
+      "aliases": [
+        "42257-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "42257-rebirth.mod",
+        "relations": {
+          "Bloodraiders": -100,
+          "Holy Nation Outlaws": -100,
+          "Old Machines": -100,
+          "Police": -100,
+          "Shek Kingdom": -100,
+          "Slave Traders": -100,
+          "The Holy Nation": -100,
+          "Traders Guild": -100,
+          "United Cities": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "black-desert-ninjas",
+      "name": "Black Desert Ninjas",
+      "aliases": [
+        "66292-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "66292-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "black-dog",
+      "name": "Black Dog",
+      "aliases": [
+        "56644-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "56644-Dialogue.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "black-dragon-ninjas",
+      "name": "Black Dragon Ninjas",
+      "aliases": [
+        "18007-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "18007-rebirth.mod",
+        "relations": {
+          "White Eyebrow Clan": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "blackshifters",
+      "name": "Blackshifters",
+      "aliases": [
+        "48743-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "48743-Dialogue.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "bloodraiders",
+      "name": "Bloodraiders",
+      "aliases": [
+        "16860-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "16860-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "bounty-hunters",
+      "name": "Bounty Hunters",
+      "aliases": [
+        "14508-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "14508-gamedata.base",
+        "relations": {
+          "Mercenary Police": 100,
+          "Police": 100,
+          "United Cities": 60
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "broken-cities",
+      "name": "Broken Cities",
+      "aliases": [
+        "18897-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "18897-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "broken-ones",
+      "name": "Broken Ones",
+      "aliases": [
+        "64918-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "64918-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "cannibal-hunters",
+      "name": "Cannibal Hunters",
+      "aliases": [
+        "16855-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "16855-gamedata.base",
+        "relations": {
+          "Cannibals": -100,
+          "Tech Hunters": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "cannibals",
+      "name": "Cannibals",
+      "aliases": [
+        "518-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "518-gamedata.base",
+        "relations": {},
+        "towns": 8
+      }
+    },
+    {
+      "id": "crab-raiders",
+      "name": "Crab Raiders",
+      "aliases": [
+        "62806-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "62806-rebirth.mod",
+        "relations": {
+          "Crabs": 100,
+          "Reavers": -100,
+          "Skeleton Bandits": -100,
+          "United Cities": -100
+        },
+        "towns": 3
+      }
+    },
+    {
+      "id": "crabs",
+      "name": "Crabs",
+      "aliases": [
+        "56108-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "56108-rebirth.mod",
+        "relations": {
+          "Crab Raiders": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "crimper",
+      "name": "Crimper",
+      "aliases": [
+        "65263-Newwworld.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "65263-Newwworld.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "deadcat",
+      "name": "Deadcat",
+      "aliases": [
+        "513-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "513-gamedata.base",
+        "relations": {
+          "Cannibals": -100,
+          "Dust Bandits": -50
+        },
+        "towns": 7
+      }
+    },
+    {
+      "id": "drifters",
+      "name": "Drifters",
+      "aliases": [
+        "51707-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "51707-rebirth.mod",
+        "relations": {
+          "Anti-Slavers": 100,
+          "Shinobi Thieves": 100,
+          "Tech Hunters": 100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "dust-bandits",
+      "name": "Dust Bandits",
+      "aliases": [
+        "200-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -10.",
+      "data": {
+        "defaultRelation": -10,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "200-gamedata.base",
+        "relations": {
+          "Police": -100,
+          "United Cities": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "empire-peasants",
+      "name": "Empire Peasants",
+      "aliases": [
+        "51646-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "51646-Dialogue.mod",
+        "relations": {
+          "The Holy Nation": -100,
+          "United Cities": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "fisher",
+      "name": "Fisher",
+      "aliases": [
+        "1209-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1209-gamedata.base",
+        "relations": {
+          "Dust Bandits": -50,
+          "Starving Bandits": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "fishmen",
+      "name": "Fishmen",
+      "aliases": [
+        "96359-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "96359-rebirth.mod",
+        "relations": {
+          "Crabs": 0,
+          "Skin Bandits": 0
+        },
+        "towns": 2
+      }
+    },
+    {
+      "id": "floodland-ruins",
+      "name": "Floodland Ruins",
+      "aliases": [
+        "48708-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "48708-rebirth.mod",
+        "relations": {},
+        "towns": 5
+      }
+    },
+    {
+      "id": "flotsam-ninjas",
+      "name": "Flotsam Ninjas",
+      "aliases": [
+        "49377-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Slaver faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Slaver",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "49377-rebirth.mod",
+        "relations": {
+          "Deadcat": 100,
+          "The Holy Nation": -100
+        },
+        "towns": 4
+      }
+    },
+    {
+      "id": "fogmen",
+      "name": "Fogmen",
+      "aliases": [
+        "18893-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "18893-rebirth.mod",
+        "relations": {},
+        "towns": 2
+      }
+    },
+    {
+      "id": "free-traders",
+      "name": "Free Traders",
+      "aliases": [
+        "1229-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1229-gamedata.base",
+        "relations": {
+          "Police": 100,
+          "Shek Kingdom": 100,
+          "Swampers": 100,
+          "United Cities": 100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "gorillos",
+      "name": "Gorillos",
+      "aliases": [
+        "51813-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "51813-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "grass-pirates",
+      "name": "Grass Pirates",
+      "aliases": [
+        "96175-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "96175-rebirth.mod",
+        "relations": {
+          "Police": -100,
+          "Preacher Cult": 0,
+          "United Cities": -100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "grayflayers",
+      "name": "Grayflayers",
+      "aliases": [
+        "48791-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "48791-Dialogue.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "gutters",
+      "name": "Gutters",
+      "aliases": [
+        "51812-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "51812-rebirth.mod",
+        "relations": {
+          "Spiders": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "herbivore",
+      "name": "Herbivore",
+      "aliases": [
+        "40544-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "40544-rebirth.mod",
+        "relations": {
+          "Wildlife": 0
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "holy-nation-outlaws",
+      "name": "Holy Nation Outlaws",
+      "aliases": [
+        "42022-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "42022-rebirth.mod",
+        "relations": {
+          "The Holy Nation": -100
+        },
+        "towns": 2
+      }
+    },
+    {
+      "id": "hounds",
+      "name": "Hounds",
+      "aliases": [
+        "48814-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "48814-Dialogue.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "imperial-lords",
+      "name": "Imperial Lords",
+      "aliases": [
+        "1087-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1087-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "kral-s-chosen",
+      "name": "Kral's Chosen",
+      "aliases": [
+        "51357-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "51357-rebirth.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "land-bat",
+      "name": "Land Bat",
+      "aliases": [
+        "97574-Newwworld.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "97574-Newwworld.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "machinists",
+      "name": "Machinists",
+      "aliases": [
+        "50358-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "50358-rebirth.mod",
+        "relations": {
+          "Tech Hunters": 100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "manhunters",
+      "name": "Manhunters",
+      "aliases": [
+        "54587-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Military",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "54587-rebirth.mod",
+        "relations": {
+          "Slave Traders": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "medics-guild",
+      "name": "Medics Guild",
+      "aliases": [
+        "1234-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1234-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "megacity",
+      "name": "Megacity",
+      "aliases": [
+        "56101-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "56101-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "mercenary-guild",
+      "name": "Mercenary Guild",
+      "aliases": [
+        "1214-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Military",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1214-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "mercenary-police",
+      "name": "Mercenary Police",
+      "aliases": [
+        "1171-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "LawEnforcement faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "LawEnforcement",
+        "notReal": false,
+        "offersBounties": true,
+        "record": "1171-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "mongrel-18891-rebirth-mod",
+      "name": "Mongrel",
+      "aliases": [
+        "18891-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "18891-rebirth.mod",
+        "relations": {
+          "Tech Hunters": 100,
+          "The Holy Nation": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "nameless",
+      "name": "Nameless",
+      "aliases": [
+        "204-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "204-gamedata.base",
+        "relations": {
+          "Dust Bandits": -100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "no-faction",
+      "name": "No Faction",
+      "aliases": [
+        "nofac"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "nofac",
+        "relations": {},
+        "towns": 4
+      }
+    },
+    {
+      "id": "nomads",
+      "name": "Nomads",
+      "aliases": [
+        "42097-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "42097-rebirth.mod",
+        "relations": {
+          "Berserkers": 0,
+          "Empire Peasants": 50,
+          "Holy Nation Outlaws": 0,
+          "Outlaw": 0,
+          "Rebel Farmers": 0,
+          "Slaves": 0,
+          "Swampers": 0,
+          "Western Hive": 50
+        },
+        "towns": 2
+      }
+    },
+    {
+      "id": "okranites",
+      "name": "Okranites",
+      "aliases": [
+        "46241-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "46241-Dialogue.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "old-machines",
+      "name": "Old Machines",
+      "aliases": [
+        "42085-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Military",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "42085-rebirth.mod",
+        "relations": {
+          "Second Empire": 0,
+          "Skeleton Legion": 50,
+          "Skeletons": 0,
+          "Skin Bandits": 0,
+          "Wildlife": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "outlaw",
+      "name": "Outlaw",
+      "aliases": [
+        "5442-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "5442-gamedata.base",
+        "relations": {
+          "Dust Bandits": -50,
+          "Police": -100,
+          "Sand ninjas": -50,
+          "The Holy Nation": -50,
+          "United Cities": -100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "police",
+      "name": "Police",
+      "aliases": [
+        "2607-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "LawEnforcement faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "LawEnforcement",
+        "notReal": false,
+        "offersBounties": true,
+        "record": "2607-gamedata.base",
+        "relations": {
+          "Cannibals": -100,
+          "Deadcat": 100,
+          "Dust Bandits": -100,
+          "Sand ninjas": -100,
+          "Slave Traders": 100,
+          "Starving Bandits": -100,
+          "Traders Guild": 100,
+          "United Cities": 100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "preacher-cult",
+      "name": "Preacher Cult",
+      "aliases": [
+        "97072-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "97072-Dialogue.mod",
+        "relations": {
+          "Grass Pirates": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "raptors",
+      "name": "Raptors",
+      "aliases": [
+        "58701-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "58701-rebirth.mod",
+        "relations": {
+          "Herbivore": 0,
+          "Spiders": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "reavers",
+      "name": "Reavers",
+      "aliases": [
+        "62805-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "62805-rebirth.mod",
+        "relations": {
+          "Crab Raiders": -100,
+          "Skeleton Bandits": -100,
+          "Skin Bandits": -100,
+          "United Cities": -100
+        },
+        "towns": 4
+      }
+    },
+    {
+      "id": "rebel-farmers",
+      "name": "Rebel Farmers",
+      "aliases": [
+        "54297-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Explicit relation to your faction 0.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "54297-rebirth.mod",
+        "relations": {
+          "Anti-Slavers": 0,
+          "Empire Peasants": 100,
+          "Nameless": 0,
+          "Rebel Swordsmen": 100,
+          "Vagrants": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "rebel-swordsmen",
+      "name": "Rebel Swordsmen",
+      "aliases": [
+        "1532900-__world reactions NE.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1532900-__world reactions NE.mod",
+        "relations": {
+          "Anti-Slavers": 100,
+          "Drifters": 0,
+          "Empire Peasants": 100,
+          "Free Traders": 100,
+          "Rebel Farmers": 100,
+          "Shinobi Thieves": 0,
+          "Slave Traders": -50,
+          "United Cities": -100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "rebirth-slaves",
+      "name": "Rebirth Slaves",
+      "aliases": [
+        "49392-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Slave faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Slave",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "49392-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "red-sabres",
+      "name": "Red Sabres",
+      "aliases": [
+        "51652-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "51652-rebirth.mod",
+        "relations": {
+          "Blackshifters": 0,
+          "Grayflayers": 0,
+          "Hounds": 0,
+          "Stone Rats": 0,
+          "Swamp Ninjas": -100,
+          "Swampers": 0,
+          "Twinblades": 0,
+          "Wildlife": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "republic-of-tertius",
+      "name": "Republic of Tertius",
+      "aliases": [
+        "15579-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": true,
+        "record": "15579-Dialogue.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "sand-ninjas",
+      "name": "Sand ninjas",
+      "aliases": [
+        "1085-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1085-gamedata.base",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "scavengers",
+      "name": "Scavengers",
+      "aliases": [
+        "95512-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Slaver faction, default relation -100.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Slaver",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "95512-rebirth.mod",
+        "relations": {
+          "United Cities": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "second-empire",
+      "name": "Second Empire",
+      "aliases": [
+        "49356-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Civilian",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "49356-rebirth.mod",
+        "relations": {
+          "Old Machines": 0,
+          "Second Empire Exile": 100,
+          "Skeleton Legion": 0
+        },
+        "towns": 46
+      }
+    },
+    {
+      "id": "second-empire-exile",
+      "name": "Second Empire Exile",
+      "aliases": [
+        "1533874-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Military",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "1533874-rebirth.mod",
+        "relations": {
+          "Old Machines": 0,
+          "Second Empire": 100,
+          "Skeleton Legion": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "shek-kingdom",
+      "name": "Shek Kingdom",
+      "aliases": [
+        "11624-Dialogue (10).mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Military",
+        "notReal": false,
+        "offersBounties": true,
+        "record": "11624-Dialogue (10).mod",
+        "relations": {
+          "The Holy Nation": -100
+        },
+        "towns": 6
+      }
+    },
+    {
+      "id": "shinobi-thieves",
+      "name": "Shinobi Thieves",
+      "aliases": [
+        "14491-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Slaver faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Slaver",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "14491-rebirth.mod",
+        "relations": {
+          "Police": 0
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "shrieking-bandits",
+      "name": "Shrieking Bandits",
+      "aliases": [
+        "42235-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "42235-rebirth.mod",
+        "relations": {
+          "Nomads": 100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "skeleton-bandits",
+      "name": "Skeleton Bandits",
+      "aliases": [
+        "62792-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "62792-rebirth.mod",
+        "relations": {
+          "Crab Raiders": -100,
+          "Reavers": -100,
+          "Skeleton Legion": 100,
+          "United Cities": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "skeleton-legion",
+      "name": "Skeleton Legion",
+      "aliases": [
+        "57737-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "57737-rebirth.mod",
+        "relations": {
+          "Old Machines": 50,
+          "Second Empire": 0,
+          "Second Empire Exile": 0,
+          "Skeletons": 0
+        },
+        "towns": 2
+      }
+    },
+    {
+      "id": "skeleton-mkii",
+      "name": "Skeleton MkII",
+      "aliases": [
+        "65268-Newwworld.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "65268-Newwworld.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "skeleton-mkii-log-head",
+      "name": "Skeleton MkII Log Head",
+      "aliases": [
+        "66532-Newwworld.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "66532-Newwworld.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "skeleton-mkii-screamer",
+      "name": "Skeleton MkII Screamer",
+      "aliases": [
+        "1533505-Newwworld.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1533505-Newwworld.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "skeletons",
+      "name": "Skeletons",
+      "aliases": [
+        "42088-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Adventurer faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Adventurer",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "42088-rebirth.mod",
+        "relations": {},
+        "towns": 4
+      }
+    },
+    {
+      "id": "skimmers",
+      "name": "Skimmers",
+      "aliases": [
+        "56098-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "56098-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "skin-bandits",
+      "name": "Skin Bandits",
+      "aliases": [
+        "63028-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "63028-Dialogue.mod",
+        "relations": {
+          "Crab Raiders": -100,
+          "Reavers": -100,
+          "Skeleton Legion": 100,
+          "United Cities": -100
+        },
+        "towns": 3
+      }
+    },
+    {
+      "id": "slave-hunters",
+      "name": "Slave Hunters",
+      "aliases": [
+        "55101-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "55101-rebirth.mod",
+        "relations": {
+          "Slave Traders": 75
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "slave-traders",
+      "name": "Slave Traders",
+      "aliases": [
+        "1084-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Slaver faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Slaver",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1084-gamedata.base",
+        "relations": {
+          "Anti-Slavers": -100,
+          "Imperial Lords": 100,
+          "Manhunters": 75,
+          "Mongrel": -100,
+          "Police": 100,
+          "Rebel Farmers": -100,
+          "Slave Hunters": 75,
+          "The Holy Nation": 0,
+          "Traders Guild": 100,
+          "United Cities": 100,
+          "Western Hive": 0
+        },
+        "towns": 8
+      }
+    },
+    {
+      "id": "slaves",
+      "name": "Slaves",
+      "aliases": [
+        "57740-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Slave faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Slave",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "57740-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "southern-hive-56777-dialogue-mod",
+      "name": "Southern Hive",
+      "aliases": [
+        "56777-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation -50.",
+      "data": {
+        "defaultRelation": -50,
+        "fundamentalType": "Military",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "56777-Dialogue.mod",
+        "relations": {
+          "Anti-Slavers": 0,
+          "Western Hive": -100,
+          "Wildlife": 0,
+          "Wolves": 0
+        },
+        "towns": 6
+      }
+    },
+    {
+      "id": "spiders",
+      "name": "Spiders",
+      "aliases": [
+        "51331-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "51331-rebirth.mod",
+        "relations": {
+          "Herbivore": 0,
+          "Wildlife": 0
+        },
+        "towns": 2
+      }
+    },
+    {
+      "id": "starving-bandits",
+      "name": "Starving Bandits",
+      "aliases": [
+        "1305-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -10.",
+      "data": {
+        "defaultRelation": -10,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1305-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "stone-rats",
+      "name": "Stone Rats",
+      "aliases": [
+        "48753-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "48753-Dialogue.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "swamp-creatures",
+      "name": "Swamp Creatures",
+      "aliases": [
+        "51811-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "51811-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "swamp-ninjas",
+      "name": "Swamp Ninjas",
+      "aliases": [
+        "51638-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "51638-rebirth.mod",
+        "relations": {
+          "Blackshifters": 0,
+          "Grayflayers": 0,
+          "Hounds": 0,
+          "Red Sabres": -100,
+          "Stone Rats": 0,
+          "Swampers": 0,
+          "Twinblades": 0,
+          "Wildlife": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "swampers",
+      "name": "Swampers",
+      "aliases": [
+        "41162-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "41162-Dialogue.mod",
+        "relations": {},
+        "towns": 5
+      }
+    },
+    {
+      "id": "tech-hunters",
+      "name": "Tech Hunters",
+      "aliases": [
+        "1233-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1233-gamedata.base",
+        "relations": {
+          "Anti-Slavers": 15,
+          "Cannibal Hunters": 100,
+          "Machinists": 100,
+          "Mongrel": 100
+        },
+        "towns": 12
+      }
+    },
+    {
+      "id": "temple-of-truth",
+      "name": "Temple of truth",
+      "aliases": [
+        "1086-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1086-gamedata.base",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "the-gorrillo-bandits",
+      "name": "The Gorrillo Bandits",
+      "aliases": [
+        "96261-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "96261-rebirth.mod",
+        "relations": {},
+        "towns": 1
+      }
+    },
+    {
+      "id": "the-holy-nation",
+      "name": "The Holy Nation",
+      "aliases": [
+        "1083-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": true,
+        "record": "1083-gamedata.base",
+        "relations": {
+          "Deadcat": 0,
+          "Flotsam Ninjas": -100,
+          "Holy Nation Outlaws": -100,
+          "Mongrel": -100,
+          "Raptors": -100,
+          "Shek Kingdom": -100,
+          "United Cities": -100
+        },
+        "towns": 26
+      }
+    },
+    {
+      "id": "the-old-empire",
+      "name": "The Old Empire",
+      "aliases": [
+        "14459-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Military",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "14459-rebirth.mod",
+        "relations": {
+          "Deadcat": -100,
+          "Dust Bandits": -100,
+          "Old Machines": 0,
+          "Sand ninjas": -100,
+          "Shek Kingdom": -100,
+          "Skeleton Legion": 0,
+          "Slave Traders": -100,
+          "Starving Bandits": -100,
+          "The Holy Nation": -100,
+          "Traders Guild": -100,
+          "United Cities": -100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "thrall-masters",
+      "name": "Thrall Masters",
+      "aliases": [
+        "97613-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "97613-rebirth.mod",
+        "relations": {
+          "Skeleton Legion": 50,
+          "Skeletons": 0,
+          "Wildlife": 0
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "trade-ninjas",
+      "name": "Trade Ninjas",
+      "aliases": [
+        "40551-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Trader faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Trader",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "40551-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "traders-guild",
+      "name": "Traders Guild",
+      "aliases": [
+        "1088-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Trader faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Trader",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1088-gamedata.base",
+        "relations": {
+          "Police": 100,
+          "Slave Traders": 100,
+          "United Cities": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "twinblades",
+      "name": "Twinblades",
+      "aliases": [
+        "48760-Dialogue.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "48760-Dialogue.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "united-cities",
+      "name": "United Cities",
+      "aliases": [
+        "defaultEmpireFactionSID"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0. Explicit relation to your faction 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": true,
+        "record": "defaultEmpireFactionSID",
+        "relations": {
+          "Nameless": 0,
+          "Police": 100,
+          "Slave Traders": 60,
+          "The Holy Nation": -100,
+          "Traders Guild": 100
+        },
+        "towns": 29
+      }
+    },
+    {
+      "id": "united-heroes-league",
+      "name": "United Heroes League",
+      "aliases": [
+        "42264-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "42264-gamedata.base",
+        "relations": {
+          "Shek Kingdom": -100,
+          "The Holy Nation": 0,
+          "Western Hive": -100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "vagrants",
+      "name": "Vagrants",
+      "aliases": [
+        "96156-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -10. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": -10,
+        "fundamentalType": "Bandit",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "96156-rebirth.mod",
+        "relations": {
+          "Anti-Slavers": 0,
+          "Empire Peasants": 0,
+          "Rebel Farmers": 0
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "western-hive-18000-gamedata-base",
+      "name": "Western Hive",
+      "aliases": [
+        "18000-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Military faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Military",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "18000-gamedata.base",
+        "relations": {},
+        "towns": 11
+      }
+    },
+    {
+      "id": "white-eyebrow-clan",
+      "name": "White Eyebrow Clan",
+      "aliases": [
+        "18011-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "18011-rebirth.mod",
+        "relations": {
+          "Black Dragon Ninjas": -100
+        },
+        "towns": 0
+      }
+    },
+    {
+      "id": "wildlife",
+      "name": "Wildlife",
+      "aliases": [
+        "3943-gamedata.base"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "3943-gamedata.base",
+        "relations": {
+          "Herbivore": 0,
+          "Spiders": 100
+        },
+        "towns": 1
+      }
+    },
+    {
+      "id": "wolves",
+      "name": "Wolves",
+      "aliases": [
+        "56128-rebirth.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "None faction, default relation 0. Not a real faction (wildlife, ruins, slaves).",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "None",
+        "notReal": true,
+        "offersBounties": false,
+        "record": "56128-rebirth.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "yabuta-outlaws",
+      "name": "Yabuta Outlaws",
+      "aliases": [
+        "1532482-__May 18 2.mod"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Bandit faction, default relation -100.",
+      "data": {
+        "defaultRelation": -100,
+        "fundamentalType": "Bandit",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "1532482-__May 18 2.mod",
+        "relations": {},
+        "towns": 0
+      }
+    },
+    {
+      "id": "generation-template",
+      "name": "generation template",
+      "aliases": [
+        "GENERATION_TEMPLATE_FACTION"
+      ],
+      "kind": "faction",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Civilian faction, default relation 0.",
+      "data": {
+        "defaultRelation": 0,
+        "fundamentalType": "Civilian",
+        "notReal": false,
+        "offersBounties": false,
+        "record": "GENERATION_TEMPLATE_FACTION",
+        "relations": {},
+        "towns": 0
+      }
+    }
+  ]
+}

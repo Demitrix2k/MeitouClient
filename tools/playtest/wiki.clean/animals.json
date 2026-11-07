@@ -1,0 +1,7306 @@
+{
+  "source": "generated from your game data by Meitou v0.16.1-nightly.20261107 (f92884ec)",
+  "dataDir": "clean install (base game + official DLC files only)",
+  "loadOrder": "gamedata.base, Newwworld.mod, Dialogue.mod, rebirth.mod",
+  "modded": false,
+  "modsSummary": "no mods beyond the base game (clean install)",
+  "mods": [],
+  "modsCfg": [],
+  "loadIssues": [],
+  "factsOnly": true,
+  "dropped_prose_fields": [
+    "item description",
+    "research description",
+    "dialogue lines (never read)",
+    "lore and book contents (never read)",
+    "character and squad flavour text (never read)"
+  ],
+  "generated": "2026-11-07T13:28:10Z",
+  "entries": [
+    {
+      "id": "barnabus",
+      "name": "Barnabus",
+      "aliases": [
+        "1532791-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Crab Raiders",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crab, combat stats 50, animal strength 50, 2.2x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 50,
+        "deathItems": [
+          {
+            "count": 20,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          },
+          {
+            "count": 5,
+            "item": "Megacrab Ganglion"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 2.2,
+        "inventory": "8x18",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.4,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 40,
+          "name": "Crab",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "1532791-rebirth.mod",
+        "scaleMax": 2.25,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "1532790-rebirth.mod",
+            "squad": "Crab tournament 2"
+          }
+        ],
+        "turnRate": 5,
+        "unarmedStats": 60,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "beak-thing",
+      "name": "Beak Thing",
+      "aliases": [
+        "2859-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Gutters",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Beak Thing, combat stats 35, animal strength 60, 1x health. Spawns through 7 squad template(s): 16 biome entries, 1 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 35,
+        "deathItems": [
+          {
+            "count": 6,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 5,
+            "item": "Raw Meat"
+          },
+          {
+            "count": 12,
+            "item": "Foul Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "8x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 50,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": false,
+          "maxBlood": 400,
+          "minBlood": 100,
+          "name": "Beak Thing",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1.5,
+          "walkSpeed": 15
+        },
+        "record": "2859-gamedata.base",
+        "scaleMax": 1,
+        "scaleMin": 0.3,
+        "smellBlood": 15,
+        "smellEggs": 2,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Cannibal Plains",
+              "sharePct": 10.9,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Purple Sands",
+              "sharePct": 16.7,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Leviathan Coast",
+              "sharePct": 11.1,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "The Crater",
+              "sharePct": 83.3,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Venge",
+              "sharePct": 18.9,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 37,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 11.9,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Greenbeach",
+              "sharePct": 9.3,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Stormgap Coast",
+              "sharePct": 7.8,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 17.6,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "High Bonefields",
+              "sharePct": 16.9,
+              "squad": "Beak Squad Small"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 2.4,
+              "squad": "beak elder"
+            },
+            {
+              "biome": "High Bonefields",
+              "sharePct": 3.4,
+              "squad": "beak elder"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 21.4,
+              "squad": "beak squad med"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 3.6,
+              "squad": "beak swarm"
+            }
+          ],
+          "nests": [
+            "Nest of Beak Things"
+          ],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "1-3",
+            "record": "4033-gamedata.base",
+            "squad": "Beak Squad -Nest"
+          },
+          {
+            "count": "0-2",
+            "record": "4033-gamedata.base",
+            "squad": "Beak Squad -Nest"
+          },
+          {
+            "count": "1-3",
+            "record": "4012-gamedata.base",
+            "squad": "Beak Squad Small"
+          },
+          {
+            "count": "1",
+            "record": "66295-rebirth.mod",
+            "squad": "beak elder"
+          },
+          {
+            "count": "2-6",
+            "record": "95535-rebirth.mod",
+            "squad": "beak squad med"
+          },
+          {
+            "count": "6-14",
+            "record": "66294-rebirth.mod",
+            "squad": "beak swarm"
+          }
+        ],
+        "turnRate": 20,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 20",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 65,
+          "name": "_giraffe type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "beloved-goat-64738-dialogue-mod",
+      "name": "Beloved Goat",
+      "aliases": [
+        "64738-Dialogue.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Goat, combat stats 10, animal strength 10, 1x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 10,
+        "combatStats": 10,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 7,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 25,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 1,
+          "isRobot": false,
+          "maxBlood": 80,
+          "minBlood": 30,
+          "name": "Goat",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "64738-Dialogue.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Gatherer Village"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "10322-Dialogue (7).mod",
+            "squad": "Farmer Camp Suspicious"
+          }
+        ],
+        "turnRate": 77,
+        "unique": true,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 15",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_duck type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "black-gorillo",
+      "name": "Black Gorillo",
+      "aliases": [
+        "55670-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Gorillos",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Black Gorillo, combat stats 80, animal strength 80, 1x health. Spawns through 3 squad template(s): 6 biome entries, 1 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 80,
+        "combatStats": 80,
+        "deathItems": [
+          {
+            "count": 8,
+            "item": "Animal Skin"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 50,
+          "name": "Black Gorillo",
+          "selfHealing": false,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1.1,
+          "walkSpeed": 20
+        },
+        "record": "55670-rebirth.mod",
+        "scaleMax": 1.1,
+        "scaleMin": 0.3,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 31.2,
+              "squad": "gorillos blue"
+            },
+            {
+              "biome": "Sonorous Dark",
+              "sharePct": 3.8,
+              "squad": "gorillos blue"
+            },
+            {
+              "biome": "Greyshelf",
+              "sharePct": 14.3,
+              "squad": "gorillos blue"
+            },
+            {
+              "biome": "Stobe's Garden",
+              "sharePct": 1.5,
+              "squad": "gorillos blue"
+            },
+            {
+              "biome": "The Crags",
+              "sharePct": 1.6,
+              "squad": "gorillos blue"
+            },
+            {
+              "biome": "Sniper Valley",
+              "sharePct": 29.9,
+              "squad": "gorillos blue"
+            }
+          ],
+          "nests": [
+            "Gorillo Nest"
+          ],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1-2",
+            "record": "55673-rebirth.mod",
+            "squad": "blue gorillo nest"
+          },
+          {
+            "count": "1-4",
+            "record": "55673-rebirth.mod",
+            "squad": "blue gorillo nest"
+          },
+          {
+            "count": "1",
+            "record": "55672-rebirth.mod",
+            "squad": "gorillos blue"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "blood-spider",
+      "name": "Blood Spider",
+      "aliases": [
+        "44882-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Spiders",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Small Spider, combat stats 40, animal strength 5, 1x health. Spawns through 10 squad template(s): 6 biome entries, 0 nest(s), 5 town(s).",
+      "data": {
+        "animalStrength": 5,
+        "combatStats": 40,
+        "deathItems": [
+          {
+            "count": 2,
+            "item": "Animal Teeth"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 1,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 0.1,
+          "isRobot": false,
+          "maxBlood": 50,
+          "minBlood": 20,
+          "name": "Small Spider",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 25
+        },
+        "record": "44882-rebirth.mod",
+        "scaleMax": 0.3,
+        "scaleMin": 0.15,
+        "smellBlood": 0,
+        "smellEggs": 5,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Venge",
+              "sharePct": 3.8,
+              "squad": "small blood spiders"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "small blood spiders"
+            },
+            {
+              "biome": "Burning Forest",
+              "sharePct": 31.8,
+              "squad": "spider squad mini baby swarm"
+            },
+            {
+              "biome": "The Swamp",
+              "sharePct": 20,
+              "squad": "spider squad mini swamp"
+            },
+            {
+              "biome": "South Wetlands",
+              "sharePct": 10,
+              "squad": "spider squad mini swamp"
+            },
+            {
+              "biome": "Burning Forest",
+              "sharePct": 45.5,
+              "squad": "spider squad mini swamp"
+            }
+          ],
+          "nests": [],
+          "towns": [
+            "Infested Lab",
+            "Lost Library",
+            "Lost Library Outpost",
+            "Swamped Lab",
+            "Tower of Spiders"
+          ]
+        },
+        "squads": [
+          {
+            "count": "5-25",
+            "record": "51399-rebirth.mod",
+            "squad": "Ancient Lab n.4 spiders"
+          },
+          {
+            "count": "5-20",
+            "record": "51401-rebirth.mod",
+            "squad": "Ancient Lab n.5 empty spiders"
+          },
+          {
+            "count": "6-10",
+            "record": "96218-rebirth.mod",
+            "squad": "bugmaster pets"
+          },
+          {
+            "count": "6-15",
+            "record": "50320-rebirth.mod",
+            "squad": "library canyon spiders"
+          },
+          {
+            "count": "1-3",
+            "record": "55679-rebirth.mod",
+            "squad": "small blood spiders"
+          },
+          {
+            "count": "5-15",
+            "record": "1533725-__world reactios swamp.mod",
+            "squad": "spider house"
+          },
+          {
+            "count": "8-15",
+            "record": "1533724-__world reactios swamp.mod",
+            "squad": "spider ruins"
+          },
+          {
+            "count": "14-30",
+            "record": "55638-rebirth.mod",
+            "squad": "spider squad mini baby swarm"
+          },
+          {
+            "count": "1-10",
+            "record": "50624-rebirth.mod",
+            "squad": "spider squad mini swamp"
+          },
+          {
+            "count": "30-40",
+            "record": "96079-rebirth.mod",
+            "squad": "spider tower"
+          }
+        ],
+        "strength": 27,
+        "turnRate": 60,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 13",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_spider type small",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "bonedog",
+      "name": "Bonedog",
+      "aliases": [
+        "3979-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Wolves",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bonedog, combat stats 20, animal strength 35, 1x health. Spawns through 31 squad template(s): 72 biome entries, 6 nest(s), 11 town(s).",
+      "data": {
+        "animalStrength": 35,
+        "combatStats": 20,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 4,
+            "item": "Animal Teeth"
+          },
+          {
+            "count": 3,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Bonedog",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "3979-gamedata.base",
+        "scaleMax": 0.85,
+        "scaleMin": 0.35,
+        "smellBlood": 10,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Stormgap Coast",
+              "sharePct": 0.8,
+              "squad": "Black Dog Extortionists"
+            },
+            {
+              "biome": "The Outlands",
+              "sharePct": 7.5,
+              "squad": "Black Dog Extortionists"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Black Dog Extortionists"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 1.1,
+              "squad": "Black Dog Extortionists"
+            },
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 0.8,
+              "squad": "Bounty hunters "
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.5,
+              "squad": "Bounty hunters "
+            },
+            {
+              "biome": "Stobe's Garden",
+              "sharePct": 1.5,
+              "squad": "Bounty hunters "
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.7,
+              "squad": "Bounty hunters wandering between towns"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.6,
+              "squad": "Bounty hunters wandering between towns"
+            },
+            {
+              "biome": "Stormgap Coast",
+              "sharePct": 0.8,
+              "squad": "Bounty hunters wandering between towns"
+            },
+            {
+              "biome": "Skinner's Roam",
+              "sharePct": 6.7,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Northern Coast",
+              "sharePct": 8.3,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Okran's Valley",
+              "sharePct": 9.6,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Okran's Pride",
+              "sharePct": 6.6,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Vain",
+              "sharePct": 6.9,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 3.8,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 20.4,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 6.6,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Spider Plains",
+              "sharePct": 8.8,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "The Hook",
+              "sharePct": 1.5,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Darkfinger",
+              "sharePct": 20,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Bast",
+              "sharePct": 2.8,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "The Eye",
+              "sharePct": 19.1,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Stormgap Coast",
+              "sharePct": 0.8,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Lone Wolf"
+            },
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 1.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Dreg",
+              "sharePct": 0.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 1.9,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 6.1,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.5,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.4,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 1.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Northern Coast",
+              "sharePct": 8.3,
+              "squad": "Wolf Pack nocturnal"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 20.4,
+              "squad": "Wolf Pack nocturnal"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 6.6,
+              "squad": "Wolf Pack nocturnal"
+            },
+            {
+              "biome": "The Hook",
+              "sharePct": 0.7,
+              "squad": "Wolf Pack nocturnal"
+            }
+          ],
+          "nests": [
+            "Boneyard Wolf Den",
+            "Raider Camp",
+            "Raider Camp (override)",
+            "Slaver Camp",
+            "Vagrant Camp",
+            "Wolf Den"
+          ],
+          "towns": [
+            "Bark",
+            "Black Dog HQ",
+            "Black Scratch",
+            "Brink",
+            "Farming Village",
+            "Heft",
+            "Heng",
+            "Holy Farm",
+            "Settled Nomad Village",
+            "Settled Nomads",
+            "Stoat"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "0-2",
+            "record": "56642-Dialogue.mod",
+            "squad": "Black Dog Extortionists"
+          },
+          {
+            "count": "2-4",
+            "record": "96520-Dialogue.mod",
+            "squad": "Black Dog HQ"
+          },
+          {
+            "count": "1-2",
+            "record": "66297-Boneyard Wolf.mod",
+            "squad": "Boneyard Wolf Pack Den"
+          },
+          {
+            "count": "0-1",
+            "record": "95749-rebirth.mod",
+            "squad": "Bounty hunters "
+          },
+          {
+            "count": "0-1",
+            "record": "5337-gamedata.base",
+            "squad": "Bounty hunters wandering between towns"
+          },
+          {
+            "count": "0-2",
+            "record": "10778-Dialogue (10).mod",
+            "squad": "Empire Bounty hunters"
+          },
+          {
+            "count": "1",
+            "record": "18892-rebirth.mod",
+            "squad": "Lone Wolf"
+          },
+          {
+            "count": "1",
+            "record": "63537-rebirth.mod",
+            "squad": "Merchant Nomads"
+          },
+          {
+            "count": "0-2",
+            "record": "1532891-__world reactions NE.mod",
+            "squad": "Outlaw Gate guard"
+          },
+          {
+            "count": "0-2",
+            "record": "1532897-__world reactions NE.mod",
+            "squad": "Outlaw barracks (override)"
+          },
+          {
+            "count": "0-2",
+            "record": "1532889-__world reactions NE.mod",
+            "squad": "Outlaw guards (override)"
+          },
+          {
+            "count": "1-2",
+            "record": "63750-rebirth.mod",
+            "squad": "Town Merchant Nomad shop"
+          },
+          {
+            "count": "0-1",
+            "record": "56096-rebirth.mod",
+            "squad": "UC farmer raider nest"
+          },
+          {
+            "count": "1-2",
+            "record": "4021-gamedata.base",
+            "squad": "Wolf Pack Den"
+          },
+          {
+            "count": "0-5",
+            "record": "4021-gamedata.base",
+            "squad": "Wolf Pack Den"
+          },
+          {
+            "count": "1-6",
+            "record": "4009-gamedata.base",
+            "squad": "Wolf Pack nocturnal"
+          },
+          {
+            "count": "10-20",
+            "record": "62554-rebirth.mod",
+            "squad": "Wolf Swarm"
+          },
+          {
+            "count": "1-7",
+            "record": "96237-rebirth.mod",
+            "squad": "Wolf pack patrol day"
+          },
+          {
+            "count": "0-2",
+            "record": "54298-rebirth.mod",
+            "squad": "empire rebel farmers"
+          },
+          {
+            "count": "0-1",
+            "record": "1533736-__world reactios swamp.mod",
+            "squad": "empire rebel farmers (civil war)"
+          },
+          {
+            "count": "0-2",
+            "record": "1533740-__world reactios swamp.mod",
+            "squad": "empire rebel farmers (south)"
+          },
+          {
+            "count": "0-2",
+            "record": "64753-rebirth.mod",
+            "squad": "empire rebel farmers heavy"
+          },
+          {
+            "count": "0-2",
+            "record": "1532881-__world reactions NE.mod",
+            "squad": "empire rebel farmers heavy (inaba dead)"
+          },
+          {
+            "count": "0-2",
+            "record": "1533741-__world reactios swamp.mod",
+            "squad": "empire rebel farmers heavy (merin dead)"
+          },
+          {
+            "count": "0-2",
+            "record": "1532844-__world reactions NE.mod",
+            "squad": "empire rebel farmers heavy (tengu dead)"
+          },
+          {
+            "count": "0-2",
+            "record": "62845-rebirth.mod",
+            "squad": "empire rebel farmers small"
+          },
+          {
+            "count": "1",
+            "record": "53642-rebirth.mod",
+            "squad": "farm shop UC"
+          },
+          {
+            "count": "0-2",
+            "record": "43950-rebirth.mod",
+            "squad": "holy farm dogs"
+          },
+          {
+            "count": "0-2",
+            "record": "18919-gamedata.base",
+            "squad": "slave hunters------"
+          }
+        ],
+        "turnRate": 55,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "boneyard-wolf",
+      "name": "Boneyard Wolf",
+      "aliases": [
+        "62553-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Wolves",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Boneyard Wolf, combat stats 40, animal strength 50, 1x health. Spawns through 2 squad template(s): 3 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 40,
+        "deathItems": [
+          {
+            "count": 6,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 8,
+            "item": "Animal Teeth"
+          },
+          {
+            "count": 8,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "6x8",
+        "lifespanDays": 45,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 4,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 30,
+          "name": "Boneyard Wolf",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 17
+        },
+        "record": "62553-rebirth.mod",
+        "scaleMax": 1.5,
+        "scaleMin": 0.35,
+        "smellBlood": 10,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Bonefields",
+              "sharePct": 8.3,
+              "squad": "Mountain Wolf Pack"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Mountain Wolf Pack"
+            },
+            {
+              "biome": "High Bonefields",
+              "sharePct": 16.9,
+              "squad": "Mountain Wolf Pack"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "66297-Boneyard Wolf.mod",
+            "squad": "Boneyard Wolf Pack Den"
+          },
+          {
+            "count": "1-7",
+            "record": "62552-rebirth.mod",
+            "squad": "Mountain Wolf Pack"
+          }
+        ],
+        "turnRate": 66,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "cage-beast",
+      "name": "Cage Beast",
+      "aliases": [
+        "42067-small_changes_otto.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Cage Beast, combat stats 33, animal strength 60, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 33,
+        "deathItems": [
+          {
+            "count": 14,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 20,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 1,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Cage Beast",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "42067-small_changes_otto.mod",
+        "scaleMax": 1.1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "1",
+            "record": "43891-rebirth.mod",
+            "squad": "cage"
+          }
+        ],
+        "turnRate": 20,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "cleanser-unit",
+      "name": "Cleanser Unit",
+      "aliases": [
+        "56111-Newwworld.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Wildlife",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Big-Bones, combat stats 50, animal strength 99, 1x health. Spawns through 2 squad template(s): 1 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 99,
+        "combatStats": 50,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "AI Core"
+          },
+          {
+            "count": 20,
+            "item": "Electrical Components"
+          },
+          {
+            "count": 3,
+            "item": "Skeleton Eye"
+          },
+          {
+            "count": 6,
+            "item": "Skeleton Muscle"
+          },
+          {
+            "count": 20,
+            "item": "Iron Plates"
+          },
+          {
+            "count": 20,
+            "item": "Copper Alloy Plates"
+          },
+          {
+            "count": 4,
+            "item": "CPU Unit"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "18x18",
+        "lifespanDays": 1000,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            }
+          ],
+          "bleedRate": 0.3,
+          "buyValue": 1000,
+          "cantEnterBuildings": true,
+          "carriable": false,
+          "dexterityMult": 1,
+          "extraAttackSlots": 3,
+          "gigantic": true,
+          "healRate": 1,
+          "hungerRate": 0,
+          "isRobot": true,
+          "maxBlood": 5000,
+          "minBlood": 1000,
+          "name": "Big-Bones",
+          "selfHealing": false,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 14
+        },
+        "record": "56111-Newwworld.mod",
+        "scaleMax": 1,
+        "scaleMin": 1,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Ashlands",
+              "sharePct": 5,
+              "squad": "robo levi"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "56113-Newwworld.mod",
+            "squad": "Big-Bones"
+          },
+          {
+            "count": "1",
+            "record": "62777-rebirth.mod",
+            "squad": "robo levi"
+          }
+        ],
+        "turnRate": 5,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 9",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 120,
+          "name": "_elephant type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "cornelius-58495-dialogue-mod",
+      "name": "Cornelius",
+      "aliases": [
+        "58495-Dialogue.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Goat, combat stats 15, animal strength 10, 1x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 10,
+        "combatStats": 15,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 7,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 1,
+          "isRobot": false,
+          "maxBlood": 80,
+          "minBlood": 30,
+          "name": "Goat",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "58495-Dialogue.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Settled Nomad Village"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "56042-Dialogue.mod",
+            "squad": "Cornelius"
+          }
+        ],
+        "turnRate": 77,
+        "unique": true,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 15",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_duck type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "crab-56088-newwworld-mod",
+      "name": "Crab",
+      "aliases": [
+        "56088-Newwworld.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Wildlife",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crab, combat stats 35, animal strength 55, 1x health. Spawns through 22 squad template(s): 27 biome entries, 1 nest(s), 5 town(s).",
+      "data": {
+        "animalStrength": 55,
+        "combatStats": 35,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 6,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "5x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.4,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 40,
+          "name": "Crab",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "56088-Newwworld.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.1,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "NONE",
+              "sharePct": 100,
+              "squad": "Crab"
+            },
+            {
+              "biome": "Greenbeach",
+              "sharePct": 23.3,
+              "squad": "Crab raiders patrol"
+            },
+            {
+              "biome": "Stobe's Garden",
+              "sharePct": 7.7,
+              "squad": "Crab raiders patrol"
+            },
+            {
+              "biome": "The Pits East",
+              "sharePct": 25,
+              "squad": "Crab raiders patrol"
+            },
+            {
+              "biome": "The Crags",
+              "sharePct": 6.6,
+              "squad": "Crab raiders patrol"
+            },
+            {
+              "biome": "The Pits",
+              "sharePct": 29,
+              "squad": "Crab raiders patrol"
+            },
+            {
+              "biome": "Stormgap Coast",
+              "sharePct": 15.5,
+              "squad": "Crab raiders patrol (Tsugi dead, Valamon dead)"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 4.2,
+              "squad": "Crab raiders patrol (Yoshinaga dead, Valamon dead)"
+            },
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 1.6,
+              "squad": "Crab raiders scout"
+            },
+            {
+              "biome": "The Crags",
+              "sharePct": 3.3,
+              "squad": "Crab raiders scout"
+            },
+            {
+              "biome": "Sniper Valley",
+              "sharePct": 3,
+              "squad": "Crab raiders scout"
+            },
+            {
+              "biome": "Greenbeach",
+              "sharePct": 7,
+              "squad": "crab raiders (broken)"
+            },
+            {
+              "biome": "Stobe's Garden",
+              "sharePct": 1.5,
+              "squad": "crab raiders (broken)"
+            },
+            {
+              "biome": "The Pits East",
+              "sharePct": 10.4,
+              "squad": "crab raiders (broken)"
+            },
+            {
+              "biome": "The Crags",
+              "sharePct": 4.9,
+              "squad": "crab raiders (broken)"
+            },
+            {
+              "biome": "The Pits",
+              "sharePct": 14.5,
+              "squad": "crab raiders (broken)"
+            },
+            {
+              "biome": "Greenbeach",
+              "sharePct": 23.3,
+              "squad": "crab wander group"
+            },
+            {
+              "biome": "The Pits East",
+              "sharePct": 20.8,
+              "squad": "crab wander group"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 17.6,
+              "squad": "crab wander group"
+            },
+            {
+              "biome": "Fishman Island",
+              "sharePct": 8.3,
+              "squad": "crab wander group"
+            },
+            {
+              "biome": "Howler Maze",
+              "sharePct": 95.2,
+              "squad": "crab wander solo"
+            },
+            {
+              "biome": "Greenbeach",
+              "sharePct": 23.3,
+              "squad": "crab wander solo"
+            },
+            {
+              "biome": "The Pits East",
+              "sharePct": 2.1,
+              "squad": "crab wander solo"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 17.6,
+              "squad": "crab wander solo"
+            },
+            {
+              "biome": "Fishman Island",
+              "sharePct": 8.3,
+              "squad": "crab wander solo"
+            },
+            {
+              "biome": "Greenbeach",
+              "sharePct": 2.3,
+              "squad": "massive crab wander"
+            },
+            {
+              "biome": "The Pits East",
+              "sharePct": 8.3,
+              "squad": "massive crab wander"
+            }
+          ],
+          "nests": [
+            "Crab Nest"
+          ],
+          "towns": [
+            "Archive Town",
+            "Crab Town",
+            "Crab Village",
+            "Looted Ruins",
+            "Lost Town"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "56091-Newwworld.mod",
+            "squad": "Crab"
+          },
+          {
+            "count": "4-8",
+            "record": "65953-Dialogue.mod",
+            "squad": "Crab Man Shop"
+          },
+          {
+            "count": "4-10",
+            "record": "62828-rebirth.mod",
+            "squad": "Crab raiders patrol"
+          },
+          {
+            "count": "4-10",
+            "record": "1532849-__world reactions NE.mod",
+            "squad": "Crab raiders patrol (Tsugi dead, Valamon dead)"
+          },
+          {
+            "count": "4-10",
+            "record": "1532853-__world reactions NE.mod",
+            "squad": "Crab raiders patrol (Yoshinaga dead, Valamon dead)"
+          },
+          {
+            "count": "1",
+            "record": "1532812-rebirth.mod",
+            "squad": "Crab raiders scout"
+          },
+          {
+            "count": "10",
+            "record": "1532796-rebirth.mod",
+            "squad": "Crab tournament 0"
+          },
+          {
+            "count": "10",
+            "record": "1532707-rebirth.mod",
+            "squad": "Crab tournament 1"
+          },
+          {
+            "count": "10",
+            "record": "1532790-rebirth.mod",
+            "squad": "Crab tournament 2"
+          },
+          {
+            "count": "15",
+            "record": "1532792-rebirth.mod",
+            "squad": "Crab tournament 3"
+          },
+          {
+            "count": "15",
+            "record": "1532794-rebirth.mod",
+            "squad": "Crab tournament 4 "
+          },
+          {
+            "count": "3",
+            "record": "65868-rebirth.mod",
+            "squad": "crab gate guard"
+          },
+          {
+            "count": "10-15",
+            "record": "56115-rebirth.mod",
+            "squad": "crab infestation"
+          },
+          {
+            "count": "5-30",
+            "record": "56109-rebirth.mod",
+            "squad": "crab nest"
+          },
+          {
+            "count": "2",
+            "record": "62825-rebirth.mod",
+            "squad": "crab raider hq"
+          },
+          {
+            "count": "0-1",
+            "record": "62831-rebirth.mod",
+            "squad": "crab raider town"
+          },
+          {
+            "count": "3-5",
+            "record": "62830-rebirth.mod",
+            "squad": "crab raiders (broken)"
+          },
+          {
+            "count": "5-10",
+            "record": "62793-rebirth.mod",
+            "squad": "crab wander group"
+          },
+          {
+            "count": "1",
+            "record": "56112-rebirth.mod",
+            "squad": "crab wander solo"
+          },
+          {
+            "count": "1",
+            "record": "65869-rebirth.mod",
+            "squad": "massive crab wander"
+          },
+          {
+            "count": "1",
+            "record": "65864-rebirth.mod",
+            "squad": "patrolling town crab"
+          },
+          {
+            "count": "1-10",
+            "record": "1534009-__SE world states.mod",
+            "squad": "reaver HQ (override) crab takeover"
+          }
+        ],
+        "turnRate": 25,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "crimper-65262-newwworld-mod",
+      "name": "Crimper",
+      "aliases": [
+        "65262-Newwworld.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Crimper",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crimper, combat stats 600, animal strength 50, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 600,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Armour Plating"
+          },
+          {
+            "count": 1,
+            "item": "CPU Unit"
+          },
+          {
+            "count": 1,
+            "item": "Robotics Components"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 0.2,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": true,
+          "maxBlood": 600,
+          "minBlood": 50,
+          "name": "Crimper",
+          "selfHealing": false,
+          "strengthMult": 2,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 20
+        },
+        "record": "65262-Newwworld.mod",
+        "scaleMax": 1.5,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "65261-Newwworld.mod",
+            "squad": "Crimper"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "domesticated-bull",
+      "name": "Domesticated Bull",
+      "aliases": [
+        "43949-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bull (domesticated), combat stats 20, animal strength 50, 1x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 20,
+        "deathItems": [
+          {
+            "count": 4,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 20,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 20,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 20,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 200,
+          "minBlood": 75,
+          "name": "Bull (domesticated)",
+          "selfHealing": true,
+          "strengthMult": 1.2,
+          "swims": true,
+          "swimSpeedMult": 1.5,
+          "walkSpeed": 13
+        },
+        "record": "43949-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.45,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Holy Farm"
+          ]
+        },
+        "squads": [
+          {
+            "count": "3-9",
+            "record": "43935-rebirth.mod",
+            "squad": "holy farm bulls"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 0.8,
+          "class": "Creature attack 20",
+          "cutMult": 0.4,
+          "humanMult": 1,
+          "length": 60,
+          "name": "_bull type weak",
+          "pierceMult": 0.4
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "garru-42201-rebirth-mod",
+      "name": "Garru",
+      "aliases": [
+        "42201-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Herbivore",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Garru, combat stats 30, animal strength 60, 1x health. Spawns through 9 squad template(s): 18 biome entries, 0 nest(s), 9 town(s).",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 30,
+        "deathItems": [
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          },
+          {
+            "count": 3,
+            "item": "Animal Skin"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 20,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 20,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 2.1,
+          "isRobot": false,
+          "maxBlood": 150,
+          "minBlood": 75,
+          "name": "Garru",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "42201-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Purple Sands",
+              "sharePct": 16.7,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Vain",
+              "sharePct": 6.9,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Leviathan Coast",
+              "sharePct": 22.2,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 7.5,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "The Hook",
+              "sharePct": 3,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.7,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.4,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 5.9,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "wild pack beast family"
+            },
+            {
+              "biome": "Forbidden Isle",
+              "sharePct": 11.1,
+              "squad": "wild pack beast family forbidden"
+            },
+            {
+              "biome": "Leviathan Coast",
+              "sharePct": 22.2,
+              "squad": "wild pack beast herd"
+            },
+            {
+              "biome": "Shun",
+              "sharePct": 9.1,
+              "squad": "wild pack beast herd"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.7,
+              "squad": "wild pack beast herd"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.2,
+              "squad": "wild pack beast herd"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 1.2,
+              "squad": "wild pack beast herd"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 5.9,
+              "squad": "wild pack beast herd"
+            },
+            {
+              "biome": "High Bonefields",
+              "sharePct": 1.7,
+              "squad": "wild pack beast herd"
+            }
+          ],
+          "nests": [],
+          "towns": [
+            "Bark",
+            "Black Scratch",
+            "Brink",
+            "Farming Village",
+            "Heft",
+            "Heng",
+            "Settled Nomad Village",
+            "Settled Nomads",
+            "Stoat"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "2-4",
+            "record": "63750-rebirth.mod",
+            "squad": "Town Merchant Nomad shop"
+          },
+          {
+            "count": "1-2",
+            "record": "53642-rebirth.mod",
+            "squad": "farm shop UC"
+          },
+          {
+            "count": "1-3",
+            "record": "42202-rebirth.mod",
+            "squad": "wild pack beast family"
+          },
+          {
+            "count": "1-3",
+            "record": "42202-rebirth.mod",
+            "squad": "wild pack beast family"
+          },
+          {
+            "count": "1-3",
+            "record": "64863-rebirth.mod",
+            "squad": "wild pack beast family forbidden"
+          },
+          {
+            "count": "1-3",
+            "record": "64863-rebirth.mod",
+            "squad": "wild pack beast family forbidden"
+          },
+          {
+            "count": "4-15",
+            "record": "50247-rebirth.mod",
+            "squad": "wild pack beast herd"
+          },
+          {
+            "count": "2-6",
+            "record": "50247-rebirth.mod",
+            "squad": "wild pack beast herd"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 0.8,
+          "class": "Creature attack 17",
+          "cutMult": 0.4,
+          "humanMult": 1,
+          "length": 60,
+          "name": "_garru",
+          "pierceMult": 0.4
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "goat",
+      "name": "Goat",
+      "aliases": [
+        "3993-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Nomads",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Goat, combat stats 10, animal strength 10, 1x health. Spawns through 15 squad template(s): 27 biome entries, 2 nest(s), 4 town(s).",
+      "data": {
+        "animalStrength": 10,
+        "combatStats": 10,
+        "deathItems": [
+          {
+            "count": 2,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 7,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 25,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 1,
+          "isRobot": false,
+          "maxBlood": 80,
+          "minBlood": 30,
+          "name": "Goat",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "3993-gamedata.base",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Dreg",
+              "sharePct": 6.1,
+              "squad": "Goat Herder"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 8.8,
+              "squad": "Goat Herder"
+            },
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 1.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Dreg",
+              "sharePct": 0.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 1.9,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 6.1,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.5,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.4,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 1.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Nomads"
+            },
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 7.8,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Northern Coast",
+              "sharePct": 8.3,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 7.5,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 20.4,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Shun",
+              "sharePct": 12.1,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "The Hook",
+              "sharePct": 2.2,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Darkfinger",
+              "sharePct": 20,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Royal Valley",
+              "sharePct": 10,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Greyshelf",
+              "sharePct": 14.3,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 5.9,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 8.8,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Sniper Valley",
+              "sharePct": 14.9,
+              "squad": "wild goats"
+            },
+            {
+              "biome": "Forbidden Isle",
+              "sharePct": 27.8,
+              "squad": "wild goats forbidden"
+            }
+          ],
+          "nests": [
+            "Goat Herder's Camp",
+            "Nomads"
+          ],
+          "towns": [
+            "Brink",
+            "Settled Nomad Village",
+            "Settled Nomads",
+            "Tower Of Goats"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "4-14",
+            "record": "4006-gamedata.base",
+            "squad": "Goat Herder"
+          },
+          {
+            "count": "0-2",
+            "record": "4006-gamedata.base",
+            "squad": "Goat Herder"
+          },
+          {
+            "count": "0-5",
+            "record": "63537-rebirth.mod",
+            "squad": "Merchant Nomads"
+          },
+          {
+            "count": "0-5",
+            "record": "63749-rebirth.mod",
+            "squad": "Nomad town resident"
+          },
+          {
+            "count": "3-7",
+            "record": "42336-rebirth.mod",
+            "squad": "Nomads"
+          },
+          {
+            "count": "0-3",
+            "record": "63750-rebirth.mod",
+            "squad": "Town Merchant Nomad shop"
+          },
+          {
+            "count": "0-1",
+            "record": "56207-rebirth.mod",
+            "squad": "UC farmer stormhouse"
+          },
+          {
+            "count": "0-1",
+            "record": "1533603-__world reactions Slavers.mod",
+            "squad": "UC farmer stormhouse (malnourished)"
+          },
+          {
+            "count": "4-10",
+            "record": "62843-rebirth.mod",
+            "squad": "goat herder camp"
+          },
+          {
+            "count": "20-30",
+            "record": "64904-rebirth.mod",
+            "squad": "goat tower"
+          },
+          {
+            "count": "1-12",
+            "record": "42263-rebirth.mod",
+            "squad": "wild goats"
+          },
+          {
+            "count": "0-2",
+            "record": "42263-rebirth.mod",
+            "squad": "wild goats"
+          },
+          {
+            "count": "1-12",
+            "record": "64862-rebirth.mod",
+            "squad": "wild goats forbidden"
+          },
+          {
+            "count": "0-2",
+            "record": "64862-rebirth.mod",
+            "squad": "wild goats forbidden"
+          }
+        ],
+        "turnRate": 77,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 15",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_duck type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "gorillo-43895-rebirth-mod",
+      "name": "Gorillo",
+      "aliases": [
+        "43895-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Gorillos",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Gorillo, combat stats 60, animal strength 50, 1x health. Spawns through 2 squad template(s): 4 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 60,
+        "deathItems": [
+          {
+            "count": 6,
+            "item": "Animal Skin"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 60,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": false,
+          "maxBlood": 450,
+          "minBlood": 50,
+          "name": "Gorillo",
+          "selfHealing": false,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 20
+        },
+        "record": "43895-rebirth.mod",
+        "scaleMax": 0.85,
+        "scaleMin": 0.25,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Vain",
+              "sharePct": 34.5,
+              "squad": "gorillos"
+            },
+            {
+              "biome": "Shun",
+              "sharePct": 12.1,
+              "squad": "gorillos"
+            },
+            {
+              "biome": "Greyshelf",
+              "sharePct": 14.3,
+              "squad": "gorillos"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 5.9,
+              "squad": "gorillos"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "1",
+            "record": "43902-rebirth.mod",
+            "squad": "gorillos"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "great-white-gorillo-98509-rebirth-mod",
+      "name": "Great White Gorillo",
+      "aliases": [
+        "98509-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Wildlife",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Gorillo, combat stats 60, animal strength 50, 1.25x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 60,
+        "deathItems": [
+          {
+            "count": 3,
+            "item": "Great White Skin"
+          },
+          {
+            "count": 1,
+            "item": "Great White Claw"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1.25,
+        "inventory": "6x8",
+        "lifespanDays": 60,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": false,
+          "maxBlood": 450,
+          "minBlood": 50,
+          "name": "Gorillo",
+          "selfHealing": false,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 20
+        },
+        "record": "98509-rebirth.mod",
+        "scaleMax": 0.85,
+        "scaleMin": 0.25,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Mourn"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "95549-Mourn.mod",
+            "squad": "mourn hq"
+          }
+        ],
+        "turnRate": 30,
+        "unique": true,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "horse-dog",
+      "name": "Horse Dog",
+      "aliases": [
+        "62551-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bonedog, combat stats 25, animal strength 40, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 40,
+        "combatStats": 25,
+        "deathItems": [
+          {
+            "count": 2,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 4,
+            "item": "Animal Teeth"
+          },
+          {
+            "count": 3,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 50,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Bonedog",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "62551-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 10,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [],
+        "turnRate": 66,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "iron-spider",
+      "name": "Iron Spider",
+      "aliases": [
+        "42069-small_changes_otto.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Old Machines",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Robot Spider Worker, combat stats 40, animal strength 70, 1x health. Spawns through 13 squad template(s): 17 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 70,
+        "combatStats": 40,
+        "deathItems": [
+          {
+            "count": 2,
+            "item": "Electrical Components"
+          },
+          {
+            "count": 6,
+            "item": "Iron Plates"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "8x8",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.5,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 0,
+          "isRobot": true,
+          "maxBlood": 250,
+          "minBlood": 250,
+          "name": "Robot Spider Worker",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "42069-small_changes_otto.mod",
+        "scaleMax": 1,
+        "scaleMin": 1,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Forbidden Isle",
+              "sharePct": 27.8,
+              "squad": "Robot spider army forbidden"
+            },
+            {
+              "biome": "Ashlands",
+              "sharePct": 10,
+              "squad": "Robot spider group"
+            },
+            {
+              "biome": "Sonorous Dark",
+              "sharePct": 7.7,
+              "squad": "Robot spider group"
+            },
+            {
+              "biome": "Cheaters Run",
+              "sharePct": 32.3,
+              "squad": "Robot spider group"
+            },
+            {
+              "biome": "Deadlands",
+              "sharePct": 23.1,
+              "squad": "Robot spiders"
+            },
+            {
+              "biome": "Floodlands",
+              "sharePct": 76.9,
+              "squad": "Robot spiders"
+            },
+            {
+              "biome": "Iron Valleys",
+              "sharePct": 58.8,
+              "squad": "Robot spiders"
+            },
+            {
+              "biome": "Obedience",
+              "sharePct": 75,
+              "squad": "Robot spiders"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 2.2,
+              "squad": "Robot spiders"
+            },
+            {
+              "biome": "Cheaters Run",
+              "sharePct": 32.3,
+              "squad": "Robot spiders"
+            },
+            {
+              "biome": "Forbidden Isle",
+              "sharePct": 2.8,
+              "squad": "Robot spiders forbidden"
+            },
+            {
+              "biome": "Cheaters Run",
+              "sharePct": 32.3,
+              "squad": "Robot spiders light"
+            },
+            {
+              "biome": "Deadlands",
+              "sharePct": 76.9,
+              "squad": "Robot spiders static"
+            },
+            {
+              "biome": "The Iron Trail",
+              "sharePct": 100,
+              "squad": "Robot spiders static"
+            },
+            {
+              "biome": "Venge",
+              "sharePct": 1.9,
+              "squad": "Robot spiders static"
+            },
+            {
+              "biome": "Ashlands",
+              "sharePct": 35,
+              "squad": "Robot spiders static ashland"
+            },
+            {
+              "biome": "Forbidden Isle",
+              "sharePct": 27.8,
+              "squad": "Robot spiders static forbidden"
+            }
+          ],
+          "nests": [],
+          "towns": [
+            "Spider Factory"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "4-12",
+            "record": "64861-rebirth.mod",
+            "squad": "Robot spider army forbidden"
+          },
+          {
+            "count": "4-18",
+            "record": "42156-rebirth.mod",
+            "squad": "Robot spider group"
+          },
+          {
+            "count": "4-8",
+            "record": "63143-rebirth.mod",
+            "squad": "Robot spider group north"
+          },
+          {
+            "count": "1",
+            "record": "42086-rebirth.mod",
+            "squad": "Robot spiders"
+          },
+          {
+            "count": "1",
+            "record": "64860-rebirth.mod",
+            "squad": "Robot spiders forbidden"
+          },
+          {
+            "count": "1",
+            "record": "42155-rebirth.mod",
+            "squad": "Robot spiders light"
+          },
+          {
+            "count": "1-2",
+            "record": "47956-rebirth.mod",
+            "squad": "Robot spiders static"
+          },
+          {
+            "count": "1-2",
+            "record": "1534046-rebirth.mod",
+            "squad": "Robot spiders static ashland"
+          },
+          {
+            "count": "1",
+            "record": "64858-rebirth.mod",
+            "squad": "Robot spiders static forbidden"
+          },
+          {
+            "count": "8-18",
+            "record": "62778-rebirth.mod",
+            "squad": "robot spiders static group"
+          },
+          {
+            "count": "4-6",
+            "record": "63142-rebirth.mod",
+            "squad": "skeleton legion force north"
+          },
+          {
+            "count": "5",
+            "record": "64855-rebirth.mod",
+            "squad": "spider factory"
+          }
+        ],
+        "turnRate": 25,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "king-96147-southern-hive-mod",
+      "name": "King",
+      "aliases": [
+        "96147-__Southern hive.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Southern Hive",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crimper, combat stats 60, animal strength 50, 1x health. Spawns through 2 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 60,
+        "deathItems": [
+          {
+            "count": 4,
+            "item": "Armour Plating"
+          },
+          {
+            "count": 4,
+            "item": "CPU Unit"
+          },
+          {
+            "count": 4,
+            "item": "Robotics Components"
+          },
+          {
+            "count": 1,
+            "item": "AI Core"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 400,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 0.2,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": true,
+          "maxBlood": 600,
+          "minBlood": 50,
+          "name": "Crimper",
+          "selfHealing": false,
+          "strengthMult": 2,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 20
+        },
+        "record": "96147-__Southern hive.mod",
+        "scaleMax": 1.5,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Southern Hive"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "96078-__Southern hive.mod",
+            "squad": "King squad"
+          },
+          {
+            "count": "1",
+            "record": "99121-Dialogue.mod",
+            "squad": "south hive patrol w/ King gorilla"
+          }
+        ],
+        "turnRate": 30,
+        "unique": true,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "king-gorillo-62768-rebirth-mod",
+      "name": "King Gorillo",
+      "aliases": [
+        "62768-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Gorillos",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Black Gorillo, combat stats 100, animal strength 100, 1x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 100,
+        "combatStats": 100,
+        "deathItems": [
+          {
+            "count": 8,
+            "item": "Animal Skin"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "18x18",
+        "lifespanDays": 200,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 50,
+          "name": "Black Gorillo",
+          "selfHealing": false,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1.1,
+          "walkSpeed": 20
+        },
+        "record": "62768-rebirth.mod",
+        "scaleMax": 2.5,
+        "scaleMin": 1,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Crumbling Labs"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "62766-rebirth.mod",
+            "squad": "mega gorillo"
+          }
+        ],
+        "strength": 100,
+        "turnRate": 30,
+        "unarmedStats": 100,
+        "unique": true,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "landbat",
+      "name": "Landbat",
+      "aliases": [
+        "97572-Newwworld.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Land Bat",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Land Bat, combat stats 30, animal strength 35, 1x health. Spawns through 2 squad template(s): 6 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 35,
+        "combatStats": 30,
+        "deathItems": [
+          {
+            "count": 6,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 3,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 2,
+            "item": "Raw Meat"
+          },
+          {
+            "count": 4,
+            "item": "Animal Teeth"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 60,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 1.7,
+          "isRobot": false,
+          "maxBlood": 200,
+          "minBlood": 50,
+          "name": "Land Bat",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 13
+        },
+        "record": "97572-Newwworld.mod",
+        "scaleMax": 1.25,
+        "scaleMin": 0.3,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 31.2,
+              "squad": "Land Bat squad"
+            },
+            {
+              "biome": "Stobe's Garden",
+              "sharePct": 7.7,
+              "squad": "Land Bat squad"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Land Bat squad"
+            },
+            {
+              "biome": "The Crags",
+              "sharePct": 8.2,
+              "squad": "Land Bat squad"
+            },
+            {
+              "biome": "The Pits",
+              "sharePct": 7.2,
+              "squad": "Land Bat squad"
+            },
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 3.9,
+              "squad": "landbat swarm"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1-10",
+            "record": "97571-Newwworld.mod",
+            "squad": "Land Bat squad"
+          },
+          {
+            "count": "18-30",
+            "record": "97665-rebirth.mod",
+            "squad": "landbat swarm"
+          }
+        ],
+        "turnRate": 44,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "leviathan",
+      "name": "Leviathan",
+      "aliases": [
+        "3967-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Wildlife",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Leviathan, combat stats 40, animal strength 90, 1x health. Spawns through 5 squad template(s): 5 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 90,
+        "combatStats": 40,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Leviathan Pearl"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "8x8",
+        "lifespanDays": 400,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            }
+          ],
+          "bleedRate": 0.3,
+          "buyValue": 1000,
+          "cantEnterBuildings": true,
+          "carriable": false,
+          "dexterityMult": 1,
+          "extraAttackSlots": 3,
+          "gigantic": true,
+          "healRate": 1,
+          "hungerRate": 10,
+          "isRobot": false,
+          "maxBlood": 5000,
+          "minBlood": 1000,
+          "name": "Leviathan",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 14
+        },
+        "record": "3967-gamedata.base",
+        "scaleMax": 1.5,
+        "scaleMin": 0.4,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Leviathan Coast",
+              "sharePct": 11.1,
+              "squad": "Leviathan Family"
+            },
+            {
+              "biome": "Stobe's Gamble",
+              "sharePct": 3.9,
+              "squad": "Leviathan Loner"
+            },
+            {
+              "biome": "Leviathan Coast",
+              "sharePct": 11.1,
+              "squad": "Leviathan Loner"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 2.4,
+              "squad": "Leviathan Loner"
+            },
+            {
+              "biome": "Sniper Valley",
+              "sharePct": 3,
+              "squad": "Leviathan Loner"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "1-2",
+            "record": "48782-rebirth.mod",
+            "squad": "Leviathan Family"
+          },
+          {
+            "count": "0-3",
+            "record": "48782-rebirth.mod",
+            "squad": "Leviathan Family"
+          },
+          {
+            "count": "1",
+            "record": "4010-gamedata.base",
+            "squad": "Leviathan Loner"
+          },
+          {
+            "count": "1",
+            "record": "4013-gamedata.base",
+            "squad": "Whale squad"
+          }
+        ],
+        "turnRate": 5,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 9",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 120,
+          "name": "_elephant type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "megacrab-56121-rebirth-mod",
+      "name": "Megacrab",
+      "aliases": [
+        "56121-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Crabs",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crab, combat stats 50, animal strength 50, 2.2x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 50,
+        "deathItems": [
+          {
+            "count": 5,
+            "item": "Megacrab Ganglion"
+          },
+          {
+            "count": 20,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 2.2,
+        "inventory": "8x18",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.4,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 40,
+          "name": "Crab",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "56121-rebirth.mod",
+        "scaleMax": 2.25,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Lost Town"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "56120-rebirth.mod",
+            "squad": "megacrab"
+          }
+        ],
+        "turnRate": 5,
+        "unarmedStats": 60,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "megaraptor",
+      "name": "Megaraptor",
+      "aliases": [
+        "50983-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Swamp Creatures",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Swamp Raptor, combat stats 60, animal strength 60, 3x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 60,
+        "deathItems": [
+          {
+            "count": 20,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 10,
+            "item": "Horn of the Megaraptor"
+          }
+        ],
+        "femaleChancePct": 100,
+        "hpMult": 3,
+        "inventory": "18x18",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Swamp Raptor",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 4,
+          "walkSpeed": 10
+        },
+        "record": "50983-rebirth.mod",
+        "scaleMax": 3.5,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Raptor Island"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "50985-rebirth.mod",
+            "squad": "megaraptor nest"
+          }
+        ],
+        "strength": 80,
+        "turnRate": 40,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 15",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_duck type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "mountain-dog",
+      "name": "Mountain Dog",
+      "aliases": [
+        "16859-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Cannibal Hunters",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bonedog, combat stats 30, animal strength 50, 1x health. Spawns through 2 squad template(s): 4 biome entries, 1 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 30,
+        "deathItems": [
+          {
+            "count": 2,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 4,
+            "item": "Animal Teeth"
+          },
+          {
+            "count": 6,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x4",
+        "lifespanDays": 50,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Bonedog",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "16859-gamedata.base",
+        "scaleMax": 1.1,
+        "scaleMin": 0.35,
+        "smellBlood": 10,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Northern Coast",
+              "sharePct": 8.3,
+              "squad": "cannibal hunter patrol"
+            },
+            {
+              "biome": "Cannibal Plains",
+              "sharePct": 2.2,
+              "squad": "cannibal hunter patrol"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 2,
+              "squad": "cannibal hunter patrol"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 1.8,
+              "squad": "cannibal hunter patrol"
+            }
+          ],
+          "nests": [
+            "Camp- Cannibal Hunters"
+          ],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "0-2",
+            "record": "16856-gamedata.base",
+            "squad": "Cannibal Hunter Squad nest"
+          },
+          {
+            "count": "0-2",
+            "record": "63888-rebirth.mod",
+            "squad": "cannibal hunter patrol"
+          }
+        ],
+        "turnRate": 66,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "mr-gigantus",
+      "name": "Mr Gigantus",
+      "aliases": [
+        "1532793-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Crab Raiders",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crab, combat stats 50, animal strength 50, 2.2x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 50,
+        "deathItems": [
+          {
+            "count": 5,
+            "item": "Megacrab Ganglion"
+          },
+          {
+            "count": 20,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 2.2,
+        "inventory": "8x18",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.4,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 40,
+          "name": "Crab",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "1532793-rebirth.mod",
+        "scaleMax": 2.25,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "1532792-rebirth.mod",
+            "squad": "Crab tournament 3"
+          }
+        ],
+        "turnRate": 5,
+        "unarmedStats": 60,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "pack-beast",
+      "name": "Pack Beast",
+      "aliases": [
+        "3999-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Traders Guild",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Garru, combat stats 22, animal strength 60, 1x health. Spawns through 9 squad template(s): 26 biome entries, 1 nest(s), 2 town(s).",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 22,
+        "deathItems": [
+          {
+            "count": 4,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 20,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 20,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 2.1,
+          "isRobot": false,
+          "maxBlood": 150,
+          "minBlood": 75,
+          "name": "Garru",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "3999-gamedata.base",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 6.6,
+              "squad": "Caravan"
+            },
+            {
+              "biome": "The Hook",
+              "sharePct": 3,
+              "squad": "Caravan"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 1.1,
+              "squad": "Caravan"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 1.1,
+              "squad": "Caravan"
+            },
+            {
+              "biome": "Stormgap Coast",
+              "sharePct": 0.8,
+              "squad": "Caravan"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "Caravan"
+            },
+            {
+              "biome": "Vain",
+              "sharePct": 3.4,
+              "squad": "Hiver Merchant caravan"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.2,
+              "squad": "Hiver Merchant caravan"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.2,
+              "squad": "Hiver Merchant caravan"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Hiver Merchant caravan"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Hiver Merchant caravan (crops)"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Hiver Merchant caravan (crops)"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Hiver Merchant caravan (mats)"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Hiver Merchant caravan (mats)"
+            },
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 1.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Dreg",
+              "sharePct": 0.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 1.9,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 6.1,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.5,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.4,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 1.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Nomads"
+            }
+          ],
+          "nests": [
+            "Nomads"
+          ],
+          "towns": [
+            "Heng",
+            "Trader's Edge"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "1-3",
+            "record": "1161-gamedata.base",
+            "squad": "Caravan"
+          },
+          {
+            "count": "2",
+            "record": "55931-Dialogue.mod",
+            "squad": "Harmothoe"
+          },
+          {
+            "count": "2-3",
+            "record": "47188-Dialogue.mod",
+            "squad": "Hiver Merchant caravan"
+          },
+          {
+            "count": "2-3",
+            "record": "62820-rebirth.mod",
+            "squad": "Hiver Merchant caravan (crops)"
+          },
+          {
+            "count": "2-3",
+            "record": "62819-rebirth.mod",
+            "squad": "Hiver Merchant caravan (mats)"
+          },
+          {
+            "count": "1-3",
+            "record": "47235-Dialogue.mod",
+            "squad": "Hiver Merchant caravan --Not in use--"
+          },
+          {
+            "count": "1-4",
+            "record": "63537-rebirth.mod",
+            "squad": "Merchant Nomads"
+          },
+          {
+            "count": "1",
+            "record": "42336-rebirth.mod",
+            "squad": "Nomads"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 0.8,
+          "class": "Creature attack 17",
+          "cutMult": 0.4,
+          "humanMult": 1,
+          "length": 60,
+          "name": "_garru",
+          "pierceMult": 0.4
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "pack-beast-dead",
+      "name": "Pack Beast Dead",
+      "aliases": [
+        "8355-Dialogue.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Traders Guild",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Garru, combat stats 15, animal strength 60, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 15,
+        "deathItems": [],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 20,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 20,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 2.1,
+          "isRobot": false,
+          "maxBlood": 150,
+          "minBlood": 75,
+          "name": "Garru",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "8355-Dialogue.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1-2",
+            "record": "8354-Dialogue.mod",
+            "squad": "Caravan Raided"
+          }
+        ],
+        "turnRate": 20,
+        "unique": false
+      }
+    },
+    {
+      "id": "pack-bull",
+      "name": "Pack Bull",
+      "aliases": [
+        "47929-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "The Holy Nation",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bull, combat stats 25, animal strength 60, 1x health. Spawns through 3 squad template(s): 13 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 60,
+        "combatStats": 25,
+        "deathItems": [
+          {
+            "count": 4,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          },
+          {
+            "count": 2,
+            "item": "Animal Horn"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 20,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 20,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 75,
+          "name": "Bull",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1.5,
+          "walkSpeed": 13
+        },
+        "record": "47929-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.45,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 1.2,
+              "squad": "Caravan NW"
+            },
+            {
+              "biome": "Okran's Pride",
+              "sharePct": 3.3,
+              "squad": "Caravan NW"
+            },
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 1.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Dreg",
+              "sharePct": 0.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 1.9,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 6.1,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.5,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.4,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 1.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "Merchant Nomads"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1-3",
+            "record": "43970-rebirth.mod",
+            "squad": "Caravan NW"
+          },
+          {
+            "count": "1-3",
+            "record": "63537-rebirth.mod",
+            "squad": "Merchant Nomads"
+          },
+          {
+            "count": "1",
+            "record": "47928-rebirth.mod",
+            "squad": "start- wandering trader"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.5,
+          "bluntMult": 1,
+          "class": "Creature attack 20",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 60,
+          "name": "_bull type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "pet-dog",
+      "name": "Pet Dog",
+      "aliases": [
+        "10323-Dialogue (7).mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bonedog, combat stats 25, animal strength 35, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 35,
+        "combatStats": 25,
+        "deathItems": [],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Bonedog",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "10323-Dialogue (7).mod",
+        "scaleMax": 1,
+        "scaleMin": 0.3,
+        "smellBlood": 6,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [],
+        "turnRate": 66,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "river-raptor",
+      "name": "River Raptor",
+      "aliases": [
+        "44911-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Raptors",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race River Raptor, combat stats 10, animal strength 25, 1x health. Spawns through 1 squad template(s): 2 biome entries, 1 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 25,
+        "combatStats": 10,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 4,
+            "item": "Foul Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 4,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "River Raptor",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 4,
+          "walkSpeed": 10
+        },
+        "record": "44911-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.4,
+        "smellBlood": 10,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Okran's Pride",
+              "sharePct": 0.7,
+              "squad": "river ducks small mob"
+            },
+            {
+              "biome": "Leviathan Coast",
+              "sharePct": 11.1,
+              "squad": "river ducks small mob"
+            }
+          ],
+          "nests": [
+            "River Nest"
+          ],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "3-12",
+            "record": "43327-rebirth.mod",
+            "squad": "river ducks small mob"
+          }
+        ],
+        "turnRate": 50,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 15",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_duck type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "security-spider",
+      "name": "Security Spider",
+      "aliases": [
+        "48670-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Ancient Ruins",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Robot Guard Spider, combat stats 60, animal strength 70, 1x health. Spawns through 5 squad template(s): 0 biome entries, 0 nest(s), 5 town(s).",
+      "data": {
+        "animalStrength": 70,
+        "combatStats": 60,
+        "deathItems": [
+          {
+            "count": 4,
+            "item": "Electrical Components"
+          },
+          {
+            "count": 1,
+            "item": "Skeleton Muscle"
+          },
+          {
+            "count": 6,
+            "item": "Iron Plates"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "5x8",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.5,
+          "buyValue": 300,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 0,
+          "isRobot": true,
+          "maxBlood": 250,
+          "minBlood": 250,
+          "name": "Robot Guard Spider",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "48670-rebirth.mod",
+        "scaleMax": 0.6,
+        "scaleMin": 0.6,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Ancient Labs",
+            "Ancient Tech Lab",
+            "Crumbling Labs",
+            "Narko's Trap",
+            "Spider Factory"
+          ]
+        },
+        "squads": [
+          {
+            "count": "5-13",
+            "record": "48471-rebirth.mod",
+            "squad": "Ancient Lab n.2 AI cores"
+          },
+          {
+            "count": "2-8",
+            "record": "51397-rebirth.mod",
+            "squad": "Ancient Lab n.3"
+          },
+          {
+            "count": "2",
+            "record": "51409-rebirth.mod",
+            "squad": "Ancient Lab n.6 AI cores emptyish"
+          },
+          {
+            "count": "1-4",
+            "record": "55647-rebirth.mod",
+            "squad": "lost armoury security"
+          },
+          {
+            "count": "10",
+            "record": "64855-rebirth.mod",
+            "squad": "spider factory"
+          }
+        ],
+        "turnRate": 25,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "security-spider-ii",
+      "name": "Security Spider II",
+      "aliases": [
+        "50318-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Robot Guard Spider, combat stats 60, animal strength 40, 1x health. Spawns through 5 squad template(s): 0 biome entries, 0 nest(s), 5 town(s).",
+      "data": {
+        "animalStrength": 40,
+        "combatStats": 60,
+        "deathItems": [
+          {
+            "count": 3,
+            "item": "Electrical Components"
+          },
+          {
+            "count": 1,
+            "item": "Skeleton Muscle"
+          },
+          {
+            "count": 4,
+            "item": "Iron Plates"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "5x8",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.5,
+          "buyValue": 300,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 0,
+          "isRobot": true,
+          "maxBlood": 250,
+          "minBlood": 250,
+          "name": "Robot Guard Spider",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "50318-rebirth.mod",
+        "scaleMax": 0.3,
+        "scaleMin": 0.3,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Black Desert City",
+            "Drowned Ruins",
+            "Old Empire Supply Outpost",
+            "Scraphouse",
+            "Secret Drug Farm"
+          ]
+        },
+        "squads": [
+          {
+            "count": "0-1",
+            "record": "1532825-rebirth.mod",
+            "squad": "Drug farm"
+          },
+          {
+            "count": "5",
+            "record": "56154-rebirth.mod",
+            "squad": "Scraphouse"
+          },
+          {
+            "count": "1",
+            "record": "50249-rebirth.mod",
+            "squad": "armour king"
+          },
+          {
+            "count": "0-2",
+            "record": "62772-rebirth.mod",
+            "squad": "lost outpost "
+          },
+          {
+            "count": "1",
+            "record": "56158-rebirth.mod",
+            "squad": "skeleton city bar"
+          }
+        ],
+        "turnRate": 25,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "settler-s-pup-64737-dialogue-mod",
+      "name": "Settler's Pup",
+      "aliases": [
+        "64737-Dialogue.mod"
+      ],
+      "kind": "animal-type",
+      "faction": null,
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bonedog, combat stats 25, animal strength 35, 1x health. Spawns through 1 squad template(s): 0 biome entries, 0 nest(s), 1 town(s).",
+      "data": {
+        "animalStrength": 35,
+        "combatStats": 25,
+        "deathItems": [],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 0,
+          "gigantic": false,
+          "healRate": 1.5,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Bonedog",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "64737-Dialogue.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.3,
+        "smellBlood": 6,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": [
+            "Gatherer Village"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "10322-Dialogue (7).mod",
+            "squad": "Farmer Camp Suspicious"
+          }
+        ],
+        "turnRate": 66,
+        "unique": true,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 10",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 25,
+          "name": "_dog type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "skimmer-56087-rebirth-mod",
+      "name": "Skimmer",
+      "aliases": [
+        "56087-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Skimmers",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Skimmer, combat stats 35, animal strength 20, 1x health. Spawns through 4 squad template(s): 10 biome entries, 2 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 20,
+        "combatStats": 35,
+        "deathItems": [
+          {
+            "count": 6,
+            "item": "Animal Claw"
+          },
+          {
+            "count": 8,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 2,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 8,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 300,
+              "part": "Chest"
+            },
+            {
+              "hp": 300,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 300,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 1,
+          "isRobot": false,
+          "maxBlood": 200,
+          "minBlood": 20,
+          "name": "Skimmer",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 25
+        },
+        "record": "56087-rebirth.mod",
+        "scaleMax": 0.8,
+        "scaleMin": 0.2,
+        "smellBlood": 0,
+        "smellEggs": 5,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "The Great Desert",
+              "sharePct": 9.2,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 6.4,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "Bast",
+              "sharePct": 1.4,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "The Eye",
+              "sharePct": 19.1,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "Skimsands",
+              "sharePct": 23.8,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 8.8,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "skimmer hunter solo 24hr"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 9.2,
+              "squad": "skimmer patrol group nocturnal"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 5.3,
+              "squad": "skimmer patrol group nocturnal"
+            },
+            {
+              "biome": "Skimsands",
+              "sharePct": 47.6,
+              "squad": "skimmer patrol group nocturnal"
+            }
+          ],
+          "nests": [
+            "Skimmer Nest",
+            "Small Skimmer Nest"
+          ],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "55640-rebirth.mod",
+            "squad": "__fish"
+          },
+          {
+            "count": "1",
+            "record": "56095-rebirth.mod",
+            "squad": "skimmer hunter solo 24hr"
+          },
+          {
+            "count": "1-3",
+            "record": "56094-rebirth.mod",
+            "squad": "skimmer nest"
+          },
+          {
+            "count": "3-6",
+            "record": "64908-rebirth.mod",
+            "squad": "skimmer patrol group nocturnal"
+          }
+        ],
+        "turnRate": 40,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 13",
+          "cutMult": 0.8,
+          "humanMult": 1,
+          "length": 55,
+          "name": "_skimmer",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Unknown"
+      }
+    },
+    {
+      "id": "skin-spider",
+      "name": "Skin Spider",
+      "aliases": [
+        "43877-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Spiders",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Spider, combat stats 40, animal strength 20, 1x health. Spawns through 5 squad template(s): 11 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 20,
+        "combatStats": 40,
+        "deathItems": [
+          {
+            "count": 2,
+            "item": "Animal Claw"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 6,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 0.1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 0.5,
+          "isRobot": false,
+          "maxBlood": 50,
+          "minBlood": 20,
+          "name": "Spider",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 25
+        },
+        "record": "43877-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.2,
+        "smellBlood": 0,
+        "smellEggs": 5,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Arach",
+              "sharePct": 83.3,
+              "squad": "spider squad"
+            },
+            {
+              "biome": "Shun",
+              "sharePct": 30.3,
+              "squad": "spider squad"
+            },
+            {
+              "biome": "Spider Plains",
+              "sharePct": 17.5,
+              "squad": "spider squad"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 8.3,
+              "squad": "spider squad"
+            },
+            {
+              "biome": "High Bonefields",
+              "sharePct": 11.9,
+              "squad": "spider squad"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 6.6,
+              "squad": "spider squad small 1-3"
+            },
+            {
+              "biome": "Shun",
+              "sharePct": 30.3,
+              "squad": "spider squad small 1-3"
+            },
+            {
+              "biome": "Spider Plains",
+              "sharePct": 26.3,
+              "squad": "spider squad small 1-3"
+            },
+            {
+              "biome": "Bonefields",
+              "sharePct": 8.3,
+              "squad": "spider squad small 1-3"
+            },
+            {
+              "biome": "High Bonefields",
+              "sharePct": 11.9,
+              "squad": "spider squad small 1-3"
+            },
+            {
+              "biome": "Arach",
+              "sharePct": 16.7,
+              "squad": "spider swarm"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "15",
+            "record": "96218-rebirth.mod",
+            "squad": "bugmaster pets"
+          },
+          {
+            "count": "1-10",
+            "record": "43878-rebirth.mod",
+            "squad": "spider squad"
+          },
+          {
+            "count": "1-3",
+            "record": "51325-rebirth.mod",
+            "squad": "spider squad small 1-3"
+          },
+          {
+            "count": "20-30",
+            "record": "51361-rebirth.mod",
+            "squad": "spider swarm"
+          }
+        ],
+        "turnRate": 40,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 13",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "swamp-raptor",
+      "name": "Swamp Raptor",
+      "aliases": [
+        "43326-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Swamp Creatures",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Swamp Raptor, combat stats 30, animal strength 45, 1x health. Spawns through 3 squad template(s): 2 biome entries, 1 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 45,
+        "combatStats": 30,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 6,
+            "item": "Foul Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 8,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 30,
+          "name": "Swamp Raptor",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 4,
+          "walkSpeed": 10
+        },
+        "record": "43326-rebirth.mod",
+        "scaleMax": 1.5,
+        "scaleMin": 0.5,
+        "smellBlood": 10,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "The Crater",
+              "sharePct": 16.7,
+              "squad": "swamp ducks small mob"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 17.6,
+              "squad": "swamp ducks small mob aggressive"
+            }
+          ],
+          "nests": [
+            "Swamp Raptor Nest"
+          ],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "3-12",
+            "record": "44912-rebirth.mod",
+            "squad": "swamp ducks small mob"
+          },
+          {
+            "count": "3-12",
+            "record": "62794-rebirth.mod",
+            "squad": "swamp ducks small mob aggressive"
+          }
+        ],
+        "turnRate": 50,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.2,
+          "bluntMult": 0.1,
+          "class": "Creature attack 15",
+          "cutMult": 4,
+          "humanMult": 1,
+          "length": 18,
+          "name": "_duck type weapon",
+          "pierceMult": 0.5
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "swamp-turtle",
+      "name": "Swamp Turtle",
+      "aliases": [
+        "3988-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Wildlife",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Swamp Turtle, combat stats 10, animal strength 10, 1x health. Spawns through 5 squad template(s): 5 biome entries, 0 nest(s), 0 town(s).",
+      "data": {
+        "animalStrength": 10,
+        "combatStats": 10,
+        "deathItems": [
+          {
+            "count": 14,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 1,
+          "isRobot": false,
+          "maxBlood": 150,
+          "minBlood": 75,
+          "name": "Swamp Turtle",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "3988-gamedata.base",
+        "scaleMax": 1.5,
+        "scaleMin": 0.35,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "South Wetlands",
+              "sharePct": 20,
+              "squad": "swamp turtle herd"
+            },
+            {
+              "biome": "The Swamp",
+              "sharePct": 20,
+              "squad": "swamp turtle squad"
+            },
+            {
+              "biome": "South Wetlands",
+              "sharePct": 20,
+              "squad": "swamp turtle squad"
+            },
+            {
+              "biome": "Burning Forest",
+              "sharePct": 22.7,
+              "squad": "swamp turtle squad"
+            },
+            {
+              "biome": "The Unwanted Zone",
+              "sharePct": 5.9,
+              "squad": "swamp turtle squad"
+            }
+          ],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "1",
+            "record": "4014-gamedata.base",
+            "squad": "Turtle Squad"
+          },
+          {
+            "count": "5-12",
+            "record": "51641-rebirth.mod",
+            "squad": "swamp turtle herd"
+          },
+          {
+            "count": "0-3",
+            "record": "51641-rebirth.mod",
+            "squad": "swamp turtle herd"
+          },
+          {
+            "count": "1-3",
+            "record": "18005-rebirth.mod",
+            "squad": "swamp turtle squad"
+          }
+        ],
+        "turnRate": 40,
+        "unique": false,
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "the-crabinator",
+      "name": "The Crabinator",
+      "aliases": [
+        "1532795-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Crab Raiders",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crab, combat stats 50, animal strength 50, 2.2x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 50,
+        "combatStats": 50,
+        "deathItems": [
+          {
+            "count": 5,
+            "item": "Megacrab Ganglion"
+          },
+          {
+            "count": 20,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 2.2,
+        "inventory": "8x18",
+        "lifespanDays": 100,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.4,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 40,
+          "name": "Crab",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "1532795-rebirth.mod",
+        "scaleMax": 2.25,
+        "scaleMin": 1.5,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "1532794-rebirth.mod",
+            "squad": "Crab tournament 4 "
+          }
+        ],
+        "turnRate": 5,
+        "unarmedStats": 60,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "titus",
+      "name": "Titus",
+      "aliases": [
+        "1532708-rebirth.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Crab Raiders",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Crab, combat stats 25, animal strength 55, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 55,
+        "combatStats": 25,
+        "deathItems": [
+          {
+            "count": 1,
+            "item": "Foul Raw Meat"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          }
+        ],
+        "femaleChancePct": 0,
+        "hpMult": 1,
+        "inventory": "5x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 50,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 50,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 150,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 150,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            }
+          ],
+          "bleedRate": 0.4,
+          "buyValue": 200,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 40,
+          "name": "Crab",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": false,
+          "swimSpeedMult": 1,
+          "walkSpeed": 15
+        },
+        "record": "1532708-rebirth.mod",
+        "scaleMax": 1,
+        "scaleMin": 0.1,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "1532707-rebirth.mod",
+            "squad": "Crab tournament 1"
+          }
+        ],
+        "turnRate": 25,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1,
+          "bluntMult": 1,
+          "class": "Creature attack 12",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 35,
+          "name": "_robot spider type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "war-gorillo",
+      "name": "War Gorillo",
+      "aliases": [
+        "99175-Dialogue.mod"
+      ],
+      "kind": "animal-type",
+      "faction": "Southern Hive",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Black Gorillo, combat stats 80, animal strength 80, 1x health. No squad that spawns on its own (biome, nest or town list) uses it.",
+      "data": {
+        "animalStrength": 80,
+        "combatStats": 80,
+        "deathItems": [
+          {
+            "count": 8,
+            "item": "Animal Skin"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Left Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Arm"
+            },
+            {
+              "hp": 100,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": false,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 2,
+          "gigantic": false,
+          "healRate": 1,
+          "hungerRate": 5,
+          "isRobot": false,
+          "maxBlood": 300,
+          "minBlood": 50,
+          "name": "Black Gorillo",
+          "selfHealing": false,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1.1,
+          "walkSpeed": 20
+        },
+        "record": "99175-Dialogue.mod",
+        "scaleMax": 1.1,
+        "scaleMin": 0.3,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [],
+          "nests": [],
+          "towns": []
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "99121-Dialogue.mod",
+            "squad": "south hive patrol w/ King gorilla"
+          },
+          {
+            "count": "1",
+            "record": "99119-Dialogue.mod",
+            "squad": "south hive patrol w/ gorillos"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 0.7,
+          "bluntMult": 1,
+          "class": "Creature attack 16",
+          "cutMult": 0.5,
+          "humanMult": 1,
+          "length": 30,
+          "name": "_gorillo",
+          "pierceMult": 0
+        },
+        "weaponLevel": "Ancient"
+      }
+    },
+    {
+      "id": "wild-bull",
+      "name": "Wild Bull",
+      "aliases": [
+        "3986-gamedata.base"
+      ],
+      "kind": "animal-type",
+      "faction": "Herbivore",
+      "region": null,
+      "x": null,
+      "z": null,
+      "zone": null,
+      "verified": false,
+      "verifiedOn": null,
+      "seen": "",
+      "source": "generated from game data",
+      "confidence": "Observed",
+      "notes": "Animal, race Bull, combat stats 20, animal strength 70, 1x health. Spawns through 7 squad template(s): 16 biome entries, 0 nest(s), 2 town(s).",
+      "data": {
+        "animalStrength": 70,
+        "combatStats": 20,
+        "deathItems": [
+          {
+            "count": 4,
+            "item": "Animal Skin"
+          },
+          {
+            "count": 10,
+            "item": "Raw Meat"
+          },
+          {
+            "count": 2,
+            "item": "Animal Horn"
+          }
+        ],
+        "femaleChancePct": 50,
+        "hpMult": 1,
+        "inventory": "4x8",
+        "lifespanDays": 40,
+        "race": {
+          "anatomy": [
+            {
+              "hp": 20,
+              "part": "Right Leg"
+            },
+            {
+              "hp": 20,
+              "part": "Left Leg"
+            },
+            {
+              "hp": 100,
+              "part": "Head"
+            },
+            {
+              "hp": 100,
+              "part": "Stomach"
+            },
+            {
+              "hp": 100,
+              "part": "Chest"
+            },
+            {
+              "hp": 100,
+              "part": "Left Foreleg"
+            },
+            {
+              "hp": 100,
+              "part": "Right Foreleg"
+            }
+          ],
+          "bleedRate": 1,
+          "buyValue": 100,
+          "cantEnterBuildings": true,
+          "carriable": true,
+          "dexterityMult": 1,
+          "extraAttackSlots": 1,
+          "gigantic": false,
+          "healRate": 2,
+          "hungerRate": 2,
+          "isRobot": false,
+          "maxBlood": 250,
+          "minBlood": 75,
+          "name": "Bull",
+          "selfHealing": true,
+          "strengthMult": 1,
+          "swims": true,
+          "swimSpeedMult": 1.5,
+          "walkSpeed": 13
+        },
+        "record": "3986-gamedata.base",
+        "scaleMax": 1,
+        "scaleMin": 0.45,
+        "smellBlood": 0,
+        "smellEggs": 0,
+        "spawnsIn": {
+          "biomes": [
+            {
+              "biome": "Skinner's Roam",
+              "sharePct": 6.7,
+              "squad": "Bulls"
+            },
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 7.1,
+              "squad": "Bulls"
+            },
+            {
+              "biome": "Berserker Country",
+              "sharePct": 10,
+              "squad": "Bulls"
+            },
+            {
+              "biome": "Vain",
+              "sharePct": 3.4,
+              "squad": "Bulls"
+            },
+            {
+              "biome": "Skinner's Roam",
+              "sharePct": 6.7,
+              "squad": "Bulls Herd"
+            },
+            {
+              "biome": "Okran's Gulf",
+              "sharePct": 1.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Dreg",
+              "sharePct": 0.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Border Zone",
+              "sharePct": 1.9,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Hidden Forest",
+              "sharePct": 6.1,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Stenn Desert",
+              "sharePct": 1.3,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "The Great Desert",
+              "sharePct": 0.5,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Heng",
+              "sharePct": 0.4,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Shem",
+              "sharePct": 3.7,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Flats Lagoon",
+              "sharePct": 6.2,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Sinkuun",
+              "sharePct": 1.8,
+              "squad": "Merchant Nomads"
+            },
+            {
+              "biome": "Grey Desert",
+              "sharePct": 11.8,
+              "squad": "Merchant Nomads"
+            }
+          ],
+          "nests": [],
+          "towns": [
+            "Settled Nomad Village",
+            "Settled Nomads"
+          ]
+        },
+        "squads": [
+          {
+            "count": "1",
+            "record": "43974-rebirth.mod",
+            "squad": "1test animals"
+          },
+          {
+            "count": "3-6",
+            "record": "4005-gamedata.base",
+            "squad": "Bulls"
+          },
+          {
+            "count": "0-3",
+            "record": "4005-gamedata.base",
+            "squad": "Bulls"
+          },
+          {
+            "count": "8-16",
+            "record": "18875-rebirth.mod",
+            "squad": "Bulls Herd"
+          },
+          {
+            "count": "0-7",
+            "record": "18875-rebirth.mod",
+            "squad": "Bulls Herd"
+          },
+          {
+            "count": "0-1",
+            "record": "63537-rebirth.mod",
+            "squad": "Merchant Nomads"
+          },
+          {
+            "count": "1-3",
+            "record": "63750-rebirth.mod",
+            "squad": "Town Merchant Nomad shop"
+          }
+        ],
+        "turnRate": 30,
+        "unique": false,
+        "weapon": {
+          "animalMult": 1,
+          "bleedMult": 1.5,
+          "bluntMult": 1,
+          "class": "Creature attack 20",
+          "cutMult": 1,
+          "humanMult": 1,
+          "length": 60,
+          "name": "_bull type",
+          "pierceMult": 1
+        },
+        "weaponLevel": "Ancient"
+      }
+    }
+  ]
+}
